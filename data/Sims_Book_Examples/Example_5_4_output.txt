@@ -1,0 +1,59 @@
+
+Number of Generators in G: 3
+Number of Relations for G: 4
+Number K: 0
+Generator List: a, b, B (a < b < B)
+Identity Element in G: 1
+
+Relation List R: 
+aa , 1
+bB , 1
+bbb , 1
+ababab , 1
+
+Inverse List For Generators: 
+a : a
+b : B
+B : b
+
+Source Vertex in Cay(G, S): 1
+Target Vertex in Cay(G, S): abab
+
+The final reduced, complete rewriting system for G with respect to R: 
+1 : aa-->1
+2 : bB-->1
+3 : bb-->B
+4 : BB-->b
+5 : bab-->aBa
+6 : BaB-->aba
+7 : Bb-->1
+8 : aBab-->baB
+9 : abaB-->Bab
+10 : baBa-->Bab
+11 : Baba-->baB
+
+9 Length Decreasing Rules : 
+1 : aa-->1
+2 : bB-->1
+3 : bb-->B
+4 : BB-->b
+5 : Bb-->1
+6 : aBab-->baB
+7 : abaB-->Bab
+8 : baBa-->Bab
+9 : Baba-->baB
+
+4 Length Preserving Rules ( After Thue Resolution ) : 
+10 : bab-->aBa
+11 : aBa-->bab
+12 : BaB-->aba
+13 : aba-->BaB
+
+The lexicographically minimal shortest path from vertex 1 to vertex abab in Cay(G, S) is Ba.
+
+Level: 0
+The reduced Word in this level: Ba.
+
+The number of shortest path(s) found from vertex 1 to vertex abab is 1.
+
+1: The shortest path #1 (Shortlex Normal Form): Ba
