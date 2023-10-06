@@ -1,0 +1,38 @@
+###########################################################################
+# The setting for finding k shortest paths in Cay(G, S)
+# Use '#' at the front of a line for comments.
+###########################################################################
+
+NumberOfGenerators      3
+
+GeneratorList           a b B
+
+# Number of inverses defined for generators
+
+NumberOfUnits           3
+
+InversesForGenerators   a:a b:B B:b
+
+Identity                1
+
+#############################################
+# The setting for the number k
+# If NumberK is set as '0', k is unbounded.
+##############################################
+
+NumberK                 0
+
+SourceNode              1
+
+TargetNode              abab
+
+###########################################################
+# The relation list for a given monoid/group presentation
+###########################################################
+
+NumberOfRelations       4 
+
+1: aa, 1
+2: bB, 1
+3: bbb, 1
+4: ababab, 1

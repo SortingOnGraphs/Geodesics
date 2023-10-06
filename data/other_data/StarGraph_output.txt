@@ -1,0 +1,305 @@
+
+Number of Generators in G: 4
+Number of Relations for G: 14
+Number K: 0
+Generator List: a, b, c, d (a < b < c < d)
+Identity Element in G: 1
+
+Relation List R: 
+aa , 1
+bb , 1
+cc , 1
+dd , 1
+aba , bab
+aca , cac
+ada , dad
+bcb , cbc
+bdb , dbd
+cdc , dcd
+abcb , bcba
+abdb , bdba
+bcdc , cdcb
+acdc , cdca
+
+Inverse List For Generators: 
+a : a
+b : b
+c : c
+d : d
+
+Source Vertex in Cay(G, S): 1
+Target Vertex in Cay(G, S): abacdc
+
+The final reduced, complete rewriting system for G with respect to R: 
+1 : aa-->1
+2 : bb-->1
+3 : cc-->1
+4 : dd-->1
+5 : bab-->aba
+6 : cac-->aca
+7 : dad-->ada
+8 : cbc-->bcb
+9 : dbd-->bdb
+10 : dcd-->cdc
+11 : bcba-->abcb
+12 : bacb-->acba
+13 : caba-->abac
+14 : baca-->acab
+15 : bdba-->abdb
+16 : badb-->adba
+17 : daba-->abad
+18 : bada-->adab
+19 : cdcb-->bcdc
+20 : cbdc-->bdcb
+21 : dbcb-->bcbd
+22 : cbdb-->bdbc
+23 : cdca-->acdc
+24 : cadc-->adca
+25 : daca-->acad
+26 : cada-->adac
+27 : cabcb-->bca
+28 : dabdb-->bda
+29 : dacdc-->adacd
+30 : dbcdc-->cdb
+31 : cabc-->abca
+32 : cbac-->acba
+33 : bcab-->abca
+34 : dabd-->abda
+35 : bdacb-->acbda
+36 : cabda-->abdac
+37 : dabca-->abcad
+38 : cabdb-->bdbca
+39 : dbad-->adba
+40 : bcadb-->adbca
+41 : bacdb-->acdba
+42 : badcb-->adcba
+43 : badca-->adcab
+44 : bdab-->abda
+45 : dabcb-->bcbda
+46 : bacda-->acdab
+47 : dbcd-->bcdb
+48 : bcdba-->abcdb
+49 : bdcba-->abdcb
+50 : dcbd-->bdcb
+51 : cbadc-->adcba
+52 : dacba-->acbad
+53 : cabdc-->abdca
+54 : bdcab-->abdca
+55 : cdbc-->bcdb
+56 : cadba-->adbac
+57 : dacd-->acda
+58 : cdac-->acda
+59 : dcad-->adca
+60 : bcdab-->abcda
+61 : cadbc-->adbca
+62 : dacbd-->acbda
+63 : cdabc-->abcda
+64 : cdbac-->acdba
+65 : dabcd-->abcda
+66 : cbdac-->acbda
+67 : dbacd-->acdba
+68 : dcabd-->abdca
+69 : dbcad-->adbca
+70 : dcbad-->adcba
+
+7 Length Decreasing Rules : 
+1 : aa-->1
+2 : bb-->1
+3 : cc-->1
+4 : dd-->1
+5 : cabcb-->bca
+6 : dabdb-->bda
+7 : dbcdc-->cdb
+
+126 Length Preserving Rules ( After Thue Resolution ) : 
+8 : bab-->aba
+9 : aba-->bab
+10 : cac-->aca
+11 : aca-->cac
+12 : dad-->ada
+13 : ada-->dad
+14 : cbc-->bcb
+15 : bcb-->cbc
+16 : dbd-->bdb
+17 : bdb-->dbd
+18 : dcd-->cdc
+19 : cdc-->dcd
+20 : bcba-->abcb
+21 : abcb-->bcba
+22 : bacb-->acba
+23 : acba-->bacb
+24 : caba-->abac
+25 : abac-->caba
+26 : baca-->acab
+27 : acab-->baca
+28 : bdba-->abdb
+29 : abdb-->bdba
+30 : badb-->adba
+31 : adba-->badb
+32 : daba-->abad
+33 : abad-->daba
+34 : bada-->adab
+35 : adab-->bada
+36 : cdcb-->bcdc
+37 : bcdc-->cdcb
+38 : cbdc-->bdcb
+39 : bdcb-->cbdc
+40 : dbcb-->bcbd
+41 : bcbd-->dbcb
+42 : cbdb-->bdbc
+43 : bdbc-->cbdb
+44 : cdca-->acdc
+45 : acdc-->cdca
+46 : cadc-->adca
+47 : adca-->cadc
+48 : daca-->acad
+49 : acad-->daca
+50 : cada-->adac
+51 : adac-->cada
+52 : dacdc-->adacd
+53 : adacd-->dacdc
+54 : cabc-->abca
+55 : abca-->cabc
+56 : cbac-->acba
+57 : acba-->cbac
+58 : bcab-->abca
+59 : abca-->bcab
+60 : dabd-->abda
+61 : abda-->dabd
+62 : bdacb-->acbda
+63 : acbda-->bdacb
+64 : cabda-->abdac
+65 : abdac-->cabda
+66 : dabca-->abcad
+67 : abcad-->dabca
+68 : cabdb-->bdbca
+69 : bdbca-->cabdb
+70 : dbad-->adba
+71 : adba-->dbad
+72 : bcadb-->adbca
+73 : adbca-->bcadb
+74 : bacdb-->acdba
+75 : acdba-->bacdb
+76 : badcb-->adcba
+77 : adcba-->badcb
+78 : badca-->adcab
+79 : adcab-->badca
+80 : bdab-->abda
+81 : abda-->bdab
+82 : dabcb-->bcbda
+83 : bcbda-->dabcb
+84 : bacda-->acdab
+85 : acdab-->bacda
+86 : dbcd-->bcdb
+87 : bcdb-->dbcd
+88 : bcdba-->abcdb
+89 : abcdb-->bcdba
+90 : bdcba-->abdcb
+91 : abdcb-->bdcba
+92 : dcbd-->bdcb
+93 : bdcb-->dcbd
+94 : cbadc-->adcba
+95 : adcba-->cbadc
+96 : dacba-->acbad
+97 : acbad-->dacba
+98 : cabdc-->abdca
+99 : abdca-->cabdc
+100 : bdcab-->abdca
+101 : abdca-->bdcab
+102 : cdbc-->bcdb
+103 : bcdb-->cdbc
+104 : cadba-->adbac
+105 : adbac-->cadba
+106 : dacd-->acda
+107 : acda-->dacd
+108 : cdac-->acda
+109 : acda-->cdac
+110 : dcad-->adca
+111 : adca-->dcad
+112 : bcdab-->abcda
+113 : abcda-->bcdab
+114 : cadbc-->adbca
+115 : adbca-->cadbc
+116 : dacbd-->acbda
+117 : acbda-->dacbd
+118 : cdabc-->abcda
+119 : abcda-->cdabc
+120 : cdbac-->acdba
+121 : acdba-->cdbac
+122 : dabcd-->abcda
+123 : abcda-->dabcd
+124 : cbdac-->acbda
+125 : acbda-->cbdac
+126 : dbacd-->acdba
+127 : acdba-->dbacd
+128 : dcabd-->abdca
+129 : abdca-->dcabd
+130 : dbcad-->adbca
+131 : adbca-->dbcad
+132 : dcbad-->adcba
+133 : adcba-->dcbad
+
+The lexicographically minimal shortest path from vertex 1 to vertex abacdc in Cay(G, S) is abacdc.
+
+Level: 0
+The reduced Word in this level: abacdc.
+
+Level: 1
+The reduced word #1 in this level: babcdc ( Parent node: abacdc , Applied rule: aba-->bab ).
+The reduced word #2 in this level: abadcd ( Parent node: abacdc , Applied rule: cdc-->dcd ).
+The reduced word #3 in this level: cabadc ( Parent node: abacdc , Applied rule: abac-->caba ).
+The reduced word #4 in this level: abcdca ( Parent node: abacdc , Applied rule: acdc-->cdca ).
+
+Level: 2
+The reduced word #1 in this level: abdcda ( Parent node: abcdca , Applied rule: cdc-->dcd ).
+The reduced word #2 in this level: acdcba ( Parent node: abcdca , Applied rule: bcdc-->cdcb ).
+The reduced word #3 in this level: cbabdc ( Parent node: cabadc , Applied rule: aba-->bab ).
+The reduced word #4 in this level: cdabac ( Parent node: cabadc , Applied rule: abad-->daba ).
+The reduced word #5 in this level: babdcd ( Parent node: abadcd , Applied rule: aba-->bab ).
+The reduced word #6 in this level: dabacd ( Parent node: abadcd , Applied rule: abad-->daba ).
+The reduced word #7 in this level: bacdcb ( Parent node: babcdc , Applied rule: bcdc-->cdcb ).
+
+Level: 3
+The reduced word #1 in this level: badcdb ( Parent node: bacdcb , Applied rule: cdc-->dcd ).
+The reduced word #2 in this level: bcdcab ( Parent node: bacdcb , Applied rule: acdc-->cdca ).
+The reduced word #3 in this level: dbabcd ( Parent node: dabacd , Applied rule: aba-->bab ).
+The reduced word #4 in this level: dcabad ( Parent node: dabacd , Applied rule: abac-->caba ).
+The reduced word #5 in this level: cdbabc ( Parent node: cdabac , Applied rule: aba-->bab ).
+The reduced word #6 in this level: cdcaba ( Parent node: cdabac , Applied rule: abac-->caba ).
+The reduced word #7 in this level: adcdba ( Parent node: acdcba , Applied rule: cdc-->dcd ).
+
+Level: 4
+The reduced word #1 in this level: cdcbab ( Parent node: cdcaba , Applied rule: aba-->bab ).
+The reduced word #2 in this level: dcdaba ( Parent node: cdcaba , Applied rule: cdc-->dcd ).
+The reduced word #3 in this level: dcbabd ( Parent node: dcabad , Applied rule: aba-->bab ).
+The reduced word #4 in this level: bdcdab ( Parent node: bcdcab , Applied rule: cdc-->dcd ).
+
+Level: 5
+The reduced word #1 in this level: dcdbab ( Parent node: dcdaba , Applied rule: aba-->bab ).
+
+The number of shortest path(s) found from vertex 1 to vertex abacdc is 24.
+
+1: The shortest path #1 (Shortlex Normal Form): abacdc
+2: The shortest path #2 : babcdc
+3: The shortest path #3 : abadcd
+4: The shortest path #4 : cabadc
+5: The shortest path #5 : abcdca
+6: The shortest path #6 : abdcda
+7: The shortest path #7 : acdcba
+8: The shortest path #8 : cbabdc
+9: The shortest path #9 : cdabac
+10: The shortest path #10 : babdcd
+11: The shortest path #11 : dabacd
+12: The shortest path #12 : bacdcb
+13: The shortest path #13 : badcdb
+14: The shortest path #14 : bcdcab
+15: The shortest path #15 : dbabcd
+16: The shortest path #16 : dcabad
+17: The shortest path #17 : cdbabc
+18: The shortest path #18 : cdcaba
+19: The shortest path #19 : adcdba
+20: The shortest path #20 : cdcbab
+21: The shortest path #21 : dcdaba
+22: The shortest path #22 : dcbabd
+23: The shortest path #23 : bdcdab
+24: The shortest path #24 : dcdbab

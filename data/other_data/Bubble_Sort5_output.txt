@@ -1,0 +1,1643 @@
+
+Number of Generators in G: 4
+Number of Relations for G: 10
+Number K: 0
+Generator List: a, b, c, d (a < b < c < d)
+Identity Element in G: 1
+
+Relation List R: 
+aa , 1
+bb , 1
+cc , 1
+dd , 1
+aba , bab
+bcb , cbc
+cdc , dcd
+ac , ca
+ad , da
+bd , db
+
+Inverse List For Generators: 
+a : a
+b : b
+c : c
+d : d
+
+Source Vertex in Cay(G, S): 1
+Target Vertex in Cay(G, S): abcdabcaba
+
+The final reduced, complete rewriting system for G with respect to R: 
+1 : aa-->1
+2 : bb-->1
+3 : cc-->1
+4 : dd-->1
+5 : bab-->aba
+6 : cbc-->bcb
+7 : dcd-->cdc
+8 : ca-->ac
+9 : da-->ad
+10 : db-->bd
+11 : cbac-->bcba
+12 : dcbd-->cdcb
+13 : dcbad-->cdcba
+
+4 Length Decreasing Rules : 
+1 : aa-->1
+2 : bb-->1
+3 : cc-->1
+4 : dd-->1
+
+18 Length Preserving Rules ( After Thue Resolution ) : 
+5 : bab-->aba
+6 : aba-->bab
+7 : cbc-->bcb
+8 : bcb-->cbc
+9 : dcd-->cdc
+10 : cdc-->dcd
+11 : ca-->ac
+12 : ac-->ca
+13 : da-->ad
+14 : ad-->da
+15 : db-->bd
+16 : bd-->db
+17 : cbac-->bcba
+18 : bcba-->cbac
+19 : dcbd-->cdcb
+20 : cdcb-->dcbd
+21 : dcbad-->cdcba
+22 : cdcba-->dcbad
+
+The lexicographically minimal shortest path from vertex 1 to vertex abcdabcaba in Cay(G, S) is abacbadcba.
+
+Level: 0
+The reduced Word in this level: abacbadcba.
+
+Level: 1
+The reduced word #1 in this level: babcbadcba ( Parent node: abacbadcba , Applied rule: aba-->bab ).
+The reduced word #2 in this level: abcabadcba ( Parent node: abacbadcba , Applied rule: ac-->ca ).
+The reduced word #3 in this level: abacbdacba ( Parent node: abacbadcba , Applied rule: ad-->da ).
+
+Level: 2
+The reduced word #1 in this level: babcbdacba ( Parent node: abacbdacba , Applied rule: aba-->bab ).
+The reduced word #2 in this level: abcabdacba ( Parent node: abacbdacba , Applied rule: ac-->ca ).
+The reduced word #3 in this level: abacbdcaba ( Parent node: abacbdacba , Applied rule: ac-->ca ).
+The reduced word #4 in this level: abacdbacba ( Parent node: abacbdacba , Applied rule: bd-->db ).
+The reduced word #5 in this level: abcbabdcba ( Parent node: abcabadcba , Applied rule: aba-->bab ).
+The reduced word #6 in this level: bacbcadcba ( Parent node: babcbadcba , Applied rule: bcb-->cbc ).
+The reduced word #7 in this level: bacbacdcba ( Parent node: babcbadcba , Applied rule: bcba-->cbac ).
+
+Level: 3
+The reduced word #1 in this level: bacbadcdba ( Parent node: bacbacdcba , Applied rule: cdc-->dcd ).
+The reduced word #2 in this level: bcabacdcba ( Parent node: bacbacdcba , Applied rule: ac-->ca ).
+The reduced word #3 in this level: bacbadcbda ( Parent node: bacbacdcba , Applied rule: cdcb-->dcbd ).
+The reduced word #4 in this level: bacbadcbad ( Parent node: bacbacdcba , Applied rule: cdcba-->dcbad ).
+The reduced word #5 in this level: bcabcadcba ( Parent node: bacbcadcba , Applied rule: ac-->ca ).
+The reduced word #6 in this level: bacbcdacba ( Parent node: bacbcadcba , Applied rule: ad-->da ).
+The reduced word #7 in this level: acbcabdcba ( Parent node: abcbabdcba , Applied rule: bcb-->cbc ).
+The reduced word #8 in this level: abcbadbcba ( Parent node: abcbabdcba , Applied rule: bd-->db ).
+The reduced word #9 in this level: acbacbdcba ( Parent node: abcbabdcba , Applied rule: bcba-->cbac ).
+The reduced word #10 in this level: babcdbacba ( Parent node: abacdbacba , Applied rule: aba-->bab ).
+The reduced word #11 in this level: abcadbacba ( Parent node: abacdbacba , Applied rule: ac-->ca ).
+The reduced word #12 in this level: abacdbcaba ( Parent node: abacdbacba , Applied rule: ac-->ca ).
+The reduced word #13 in this level: babcbdcaba ( Parent node: abacbdcaba , Applied rule: aba-->bab ).
+The reduced word #14 in this level: abacbdcbab ( Parent node: abacbdcaba , Applied rule: aba-->bab ).
+The reduced word #15 in this level: abcabdcaba ( Parent node: abacbdcaba , Applied rule: ac-->ca ).
+
+Level: 4
+The reduced word #1 in this level: abcabdcbab ( Parent node: abcabdcaba , Applied rule: aba-->bab ).
+The reduced word #2 in this level: abcadbcaba ( Parent node: abcabdcaba , Applied rule: bd-->db ).
+The reduced word #3 in this level: babcbdcbab ( Parent node: abacbdcbab , Applied rule: aba-->bab ).
+The reduced word #4 in this level: abacdbcbab ( Parent node: abacbdcbab , Applied rule: bd-->db ).
+The reduced word #5 in this level: bacbcdcaba ( Parent node: babcbdcaba , Applied rule: bcb-->cbc ).
+The reduced word #6 in this level: babcdbcaba ( Parent node: babcbdcaba , Applied rule: bd-->db ).
+The reduced word #7 in this level: abcdabacba ( Parent node: abcadbacba , Applied rule: ad-->da ).
+The reduced word #8 in this level: cabacbdcba ( Parent node: acbacbdcba , Applied rule: ac-->ca ).
+The reduced word #9 in this level: acbacdbcba ( Parent node: acbacbdcba , Applied rule: bd-->db ).
+The reduced word #10 in this level: acbcadbcba ( Parent node: abcbadbcba , Applied rule: bcb-->cbc ).
+The reduced word #11 in this level: abcbadcbca ( Parent node: abcbadbcba , Applied rule: bcb-->cbc ).
+The reduced word #12 in this level: abcbdabcba ( Parent node: abcbadbcba , Applied rule: ad-->da ).
+The reduced word #13 in this level: abcbadcbac ( Parent node: abcbadbcba , Applied rule: bcba-->cbac ).
+The reduced word #14 in this level: cabcabdcba ( Parent node: acbcabdcba , Applied rule: ac-->ca ).
+The reduced word #15 in this level: bcabcdacba ( Parent node: bacbcdacba , Applied rule: ac-->ca ).
+The reduced word #16 in this level: bcabadcbad ( Parent node: bacbadcbad , Applied rule: ac-->ca ).
+The reduced word #17 in this level: bacbdacbad ( Parent node: bacbadcbad , Applied rule: ad-->da ).
+The reduced word #18 in this level: bcabadcbda ( Parent node: bacbadcbda , Applied rule: ac-->ca ).
+The reduced word #19 in this level: bacbdacbda ( Parent node: bacbadcbda , Applied rule: ad-->da ).
+The reduced word #20 in this level: bcbabcdcba ( Parent node: bcabacdcba , Applied rule: aba-->bab ).
+The reduced word #21 in this level: bcabadcdba ( Parent node: bcabacdcba , Applied rule: cdc-->dcd ).
+The reduced word #22 in this level: bacbdacdba ( Parent node: bacbadcdba , Applied rule: ad-->da ).
+
+Level: 5
+The reduced word #1 in this level: bcabdacdba ( Parent node: bacbdacdba , Applied rule: ac-->ca ).
+The reduced word #2 in this level: bacbdcadba ( Parent node: bacbdacdba , Applied rule: ac-->ca ).
+The reduced word #3 in this level: bacdbacdba ( Parent node: bacbdacdba , Applied rule: bd-->db ).
+The reduced word #4 in this level: bcbabdcdba ( Parent node: bcabadcdba , Applied rule: aba-->bab ).
+The reduced word #5 in this level: cbcabcdcba ( Parent node: bcbabcdcba , Applied rule: bcb-->cbc ).
+The reduced word #6 in this level: cbacbcdcba ( Parent node: bcbabcdcba , Applied rule: bcba-->cbac ).
+The reduced word #7 in this level: bcbabdcbda ( Parent node: bcbabcdcba , Applied rule: cdcb-->dcbd ).
+The reduced word #8 in this level: bcbabdcbad ( Parent node: bcbabcdcba , Applied rule: cdcba-->dcbad ).
+The reduced word #9 in this level: bcabdacbda ( Parent node: bacbdacbda , Applied rule: ac-->ca ).
+The reduced word #10 in this level: bacbdcabda ( Parent node: bacbdacbda , Applied rule: ac-->ca ).
+The reduced word #11 in this level: bacdbacbda ( Parent node: bacbdacbda , Applied rule: bd-->db ).
+The reduced word #12 in this level: bcabdacbad ( Parent node: bacbdacbad , Applied rule: ac-->ca ).
+The reduced word #13 in this level: bacbdcabad ( Parent node: bacbdacbad , Applied rule: ac-->ca ).
+The reduced word #14 in this level: bacdbacbad ( Parent node: bacbdacbad , Applied rule: bd-->db ).
+The reduced word #15 in this level: bcabcdcaba ( Parent node: bcabcdacba , Applied rule: ac-->ca ).
+The reduced word #16 in this level: cabcadbcba ( Parent node: cabcabdcba , Applied rule: bd-->db ).
+The reduced word #17 in this level: acbcadcbac ( Parent node: abcbadcbac , Applied rule: bcb-->cbc ).
+The reduced word #18 in this level: abcbdacbac ( Parent node: abcbadcbac , Applied rule: ad-->da ).
+The reduced word #19 in this level: acbacdcbac ( Parent node: abcbadcbac , Applied rule: bcba-->cbac ).
+The reduced word #20 in this level: acbcdabcba ( Parent node: abcbdabcba , Applied rule: bcb-->cbc ).
+The reduced word #21 in this level: abcbdacbca ( Parent node: abcbdabcba , Applied rule: bcb-->cbc ).
+The reduced word #22 in this level: abcdbabcba ( Parent node: abcbdabcba , Applied rule: bd-->db ).
+The reduced word #23 in this level: acbcadcbca ( Parent node: abcbadcbca , Applied rule: bcb-->cbc ).
+The reduced word #24 in this level: acbacdcbca ( Parent node: abcbadcbca , Applied rule: bcba-->cbac ).
+The reduced word #25 in this level: cabacdbcba ( Parent node: acbacdbcba , Applied rule: ac-->ca ).
+The reduced word #26 in this level: cbabcbdcba ( Parent node: cabacbdcba , Applied rule: aba-->bab ).
+The reduced word #27 in this level: abcdabcaba ( Parent node: abcdabacba , Applied rule: ac-->ca ).
+The reduced word #28 in this level: babcdbcbab ( Parent node: babcdbcaba , Applied rule: aba-->bab ).
+The reduced word #29 in this level: bacbcdcbab ( Parent node: bacbcdcaba , Applied rule: aba-->bab ).
+The reduced word #30 in this level: bacbdcdaba ( Parent node: bacbcdcaba , Applied rule: cdc-->dcd ).
+The reduced word #31 in this level: abacdcbcab ( Parent node: abacdbcbab , Applied rule: bcb-->cbc ).
+The reduced word #32 in this level: abcadbcbab ( Parent node: abacdbcbab , Applied rule: ac-->ca ).
+The reduced word #33 in this level: abacdcbacb ( Parent node: abacdbcbab , Applied rule: bcba-->cbac ).
+
+Level: 6
+The reduced word #1 in this level: babcdcbacb ( Parent node: abacdcbacb , Applied rule: aba-->bab ).
+The reduced word #2 in this level: abadcdbacb ( Parent node: abacdcbacb , Applied rule: cdc-->dcd ).
+The reduced word #3 in this level: abcadcbacb ( Parent node: abacdcbacb , Applied rule: ac-->ca ).
+The reduced word #4 in this level: abadcbdacb ( Parent node: abacdcbacb , Applied rule: cdcb-->dcbd ).
+The reduced word #5 in this level: abadcbadcb ( Parent node: abacdcbacb , Applied rule: cdcba-->dcbad ).
+The reduced word #6 in this level: abcadcbcab ( Parent node: abcadbcbab , Applied rule: bcb-->cbc ).
+The reduced word #7 in this level: abcdabcbab ( Parent node: abcadbcbab , Applied rule: ad-->da ).
+The reduced word #8 in this level: babcdcbcab ( Parent node: abacdcbcab , Applied rule: aba-->bab ).
+The reduced word #9 in this level: abadcdbcab ( Parent node: abacdcbcab , Applied rule: cdc-->dcd ).
+The reduced word #10 in this level: abadcbdcab ( Parent node: abacdcbcab , Applied rule: cdcb-->dcbd ).
+The reduced word #11 in this level: bacbdcdbab ( Parent node: bacbdcdaba , Applied rule: aba-->bab ).
+The reduced word #12 in this level: bcabdcdaba ( Parent node: bacbdcdaba , Applied rule: ac-->ca ).
+The reduced word #13 in this level: bacdbcdaba ( Parent node: bacbdcdaba , Applied rule: bd-->db ).
+The reduced word #14 in this level: bcabcdcbab ( Parent node: bacbcdcbab , Applied rule: ac-->ca ).
+The reduced word #15 in this level: bacbdcbdab ( Parent node: bacbcdcbab , Applied rule: cdcb-->dcbd ).
+The reduced word #16 in this level: bacbdcbadb ( Parent node: bacbcdcbab , Applied rule: cdcba-->dcbad ).
+The reduced word #17 in this level: cbabcdbcba ( Parent node: cbabcbdcba , Applied rule: bd-->db ).
+The reduced word #18 in this level: cabacdcbca ( Parent node: cabacdbcba , Applied rule: bcb-->cbc ).
+The reduced word #19 in this level: cabacdcbac ( Parent node: cabacdbcba , Applied rule: bcba-->cbac ).
+The reduced word #20 in this level: acbadcdbca ( Parent node: acbacdcbca , Applied rule: cdc-->dcd ).
+The reduced word #21 in this level: acbadcbdca ( Parent node: acbacdcbca , Applied rule: cdcb-->dcbd ).
+The reduced word #22 in this level: cabcadcbca ( Parent node: acbcadcbca , Applied rule: ac-->ca ).
+The reduced word #23 in this level: acbcdacbca ( Parent node: acbcadcbca , Applied rule: ad-->da ).
+The reduced word #24 in this level: abcdbacbca ( Parent node: abcdbabcba , Applied rule: bcb-->cbc ).
+The reduced word #25 in this level: abcdbacbac ( Parent node: abcdbabcba , Applied rule: bcba-->cbac ).
+The reduced word #26 in this level: abcbdcabca ( Parent node: abcbdacbca , Applied rule: ac-->ca ).
+The reduced word #27 in this level: cabcdabcba ( Parent node: acbcdabcba , Applied rule: ac-->ca ).
+The reduced word #28 in this level: acbcdacbac ( Parent node: acbcdabcba , Applied rule: bcba-->cbac ).
+The reduced word #29 in this level: acbadcdbac ( Parent node: acbacdcbac , Applied rule: cdc-->dcd ).
+The reduced word #30 in this level: acbadcbdac ( Parent node: acbacdcbac , Applied rule: cdcb-->dcbd ).
+The reduced word #31 in this level: acbadcbadc ( Parent node: acbacdcbac , Applied rule: cdcba-->dcbad ).
+The reduced word #32 in this level: abcbdcabac ( Parent node: abcbdacbac , Applied rule: ac-->ca ).
+The reduced word #33 in this level: cabcadcbac ( Parent node: acbcadcbac , Applied rule: ac-->ca ).
+The reduced word #34 in this level: bcadbacbad ( Parent node: bacdbacbad , Applied rule: ac-->ca ).
+The reduced word #35 in this level: bacdbcabad ( Parent node: bacdbacbad , Applied rule: ac-->ca ).
+The reduced word #36 in this level: bacbdcbabd ( Parent node: bacbdcabad , Applied rule: aba-->bab ).
+The reduced word #37 in this level: bcabdcabad ( Parent node: bacbdcabad , Applied rule: ac-->ca ).
+The reduced word #38 in this level: bcadbacbda ( Parent node: bacdbacbda , Applied rule: ac-->ca ).
+The reduced word #39 in this level: bacdbcabda ( Parent node: bacdbacbda , Applied rule: ac-->ca ).
+The reduced word #40 in this level: bcabdcabda ( Parent node: bacbdcabda , Applied rule: ac-->ca ).
+The reduced word #41 in this level: cbcabdcbad ( Parent node: bcbabdcbad , Applied rule: bcb-->cbc ).
+The reduced word #42 in this level: bcbadbcbad ( Parent node: bcbabdcbad , Applied rule: bd-->db ).
+The reduced word #43 in this level: cbacbdcbad ( Parent node: bcbabdcbad , Applied rule: bcba-->cbac ).
+The reduced word #44 in this level: cbcabdcbda ( Parent node: bcbabdcbda , Applied rule: bcb-->cbc ).
+The reduced word #45 in this level: bcbadbcbda ( Parent node: bcbabdcbda , Applied rule: bd-->db ).
+The reduced word #46 in this level: cbacbdcbda ( Parent node: bcbabdcbda , Applied rule: bcba-->cbac ).
+The reduced word #47 in this level: cbacbdcdba ( Parent node: cbacbcdcba , Applied rule: cdc-->dcd ).
+The reduced word #48 in this level: cbcabdcdba ( Parent node: cbcabcdcba , Applied rule: cdc-->dcd ).
+The reduced word #49 in this level: bcbadbcdba ( Parent node: bcbabdcdba , Applied rule: bd-->db ).
+The reduced word #50 in this level: bcadbacdba ( Parent node: bacdbacdba , Applied rule: ac-->ca ).
+The reduced word #51 in this level: bacdbcadba ( Parent node: bacdbacdba , Applied rule: ac-->ca ).
+The reduced word #52 in this level: bcabdcadba ( Parent node: bacbdcadba , Applied rule: ac-->ca ).
+
+Level: 7
+The reduced word #1 in this level: bcadbcadba ( Parent node: bcabdcadba , Applied rule: bd-->db ).
+The reduced word #2 in this level: bcdabacdba ( Parent node: bcadbacdba , Applied rule: ad-->da ).
+The reduced word #3 in this level: cbcadbcdba ( Parent node: bcbadbcdba , Applied rule: bcb-->cbc ).
+The reduced word #4 in this level: bcbdabcdba ( Parent node: bcbadbcdba , Applied rule: ad-->da ).
+The reduced word #5 in this level: cbacdbcdba ( Parent node: bcbadbcdba , Applied rule: bcba-->cbac ).
+The reduced word #6 in this level: cbacdbcbda ( Parent node: cbacbdcbda , Applied rule: bd-->db ).
+The reduced word #7 in this level: cbcadbcbda ( Parent node: bcbadbcbda , Applied rule: bcb-->cbc ).
+The reduced word #8 in this level: bcbadcbcda ( Parent node: bcbadbcbda , Applied rule: bcb-->cbc ).
+The reduced word #9 in this level: bcbdabcbda ( Parent node: bcbadbcbda , Applied rule: ad-->da ).
+The reduced word #10 in this level: cbacdbcbad ( Parent node: cbacbdcbad , Applied rule: bd-->db ).
+The reduced word #11 in this level: cbcadbcbad ( Parent node: bcbadbcbad , Applied rule: bcb-->cbc ).
+The reduced word #12 in this level: bcbadcbcad ( Parent node: bcbadbcbad , Applied rule: bcb-->cbc ).
+The reduced word #13 in this level: bcbdabcbad ( Parent node: bcbadbcbad , Applied rule: ad-->da ).
+The reduced word #14 in this level: bcbadcbacd ( Parent node: bcbadbcbad , Applied rule: bcba-->cbac ).
+The reduced word #15 in this level: bcadbcabda ( Parent node: bcabdcabda , Applied rule: bd-->db ).
+The reduced word #16 in this level: bcdabacbda ( Parent node: bcadbacbda , Applied rule: ad-->da ).
+The reduced word #17 in this level: bcabdcbabd ( Parent node: bcabdcabad , Applied rule: aba-->bab ).
+The reduced word #18 in this level: bcadbcabad ( Parent node: bcabdcabad , Applied rule: bd-->db ).
+The reduced word #19 in this level: bacdbcbabd ( Parent node: bacbdcbabd , Applied rule: bd-->db ).
+The reduced word #20 in this level: bcdabacbad ( Parent node: bcadbacbad , Applied rule: ad-->da ).
+The reduced word #21 in this level: cabcdacbac ( Parent node: cabcadcbac , Applied rule: ad-->da ).
+The reduced word #22 in this level: abcbdcbabc ( Parent node: abcbdcabac , Applied rule: aba-->bab ).
+The reduced word #23 in this level: acbcdcabac ( Parent node: abcbdcabac , Applied rule: bcb-->cbc ).
+The reduced word #24 in this level: abcdbcabac ( Parent node: abcbdcabac , Applied rule: bd-->db ).
+The reduced word #25 in this level: cabadcbadc ( Parent node: acbadcbadc , Applied rule: ac-->ca ).
+The reduced word #26 in this level: acbdacbadc ( Parent node: acbadcbadc , Applied rule: ad-->da ).
+The reduced word #27 in this level: cabadcbdac ( Parent node: acbadcbdac , Applied rule: ac-->ca ).
+The reduced word #28 in this level: acbdacbdac ( Parent node: acbadcbdac , Applied rule: ad-->da ).
+The reduced word #29 in this level: cabadcdbac ( Parent node: acbadcdbac , Applied rule: ac-->ca ).
+The reduced word #30 in this level: acbdacdbac ( Parent node: acbadcdbac , Applied rule: ad-->da ).
+The reduced word #31 in this level: cabcdacbca ( Parent node: cabcdabcba , Applied rule: bcb-->cbc ).
+The reduced word #32 in this level: acbcdcabca ( Parent node: abcbdcabca , Applied rule: bcb-->cbc ).
+The reduced word #33 in this level: abcdbcabca ( Parent node: abcbdcabca , Applied rule: bd-->db ).
+The reduced word #34 in this level: cabadcbdca ( Parent node: acbadcbdca , Applied rule: ac-->ca ).
+The reduced word #35 in this level: acbdacbdca ( Parent node: acbadcbdca , Applied rule: ad-->da ).
+The reduced word #36 in this level: cabadcdbca ( Parent node: acbadcdbca , Applied rule: ac-->ca ).
+The reduced word #37 in this level: acbdacdbca ( Parent node: acbadcdbca , Applied rule: ad-->da ).
+The reduced word #38 in this level: cbabcdcbac ( Parent node: cabacdcbac , Applied rule: aba-->bab ).
+The reduced word #39 in this level: cbabcdcbca ( Parent node: cabacdcbca , Applied rule: aba-->bab ).
+The reduced word #40 in this level: bcabdcbadb ( Parent node: bacbdcbadb , Applied rule: ac-->ca ).
+The reduced word #41 in this level: bacdbcbadb ( Parent node: bacbdcbadb , Applied rule: bd-->db ).
+The reduced word #42 in this level: bcabdcbdab ( Parent node: bacbdcbdab , Applied rule: ac-->ca ).
+The reduced word #43 in this level: bacdbcbdab ( Parent node: bacbdcbdab , Applied rule: bd-->db ).
+The reduced word #44 in this level: bcabdcdbab ( Parent node: bcabcdcbab , Applied rule: cdc-->dcd ).
+The reduced word #45 in this level: bacdbcdbab ( Parent node: bacdbcdaba , Applied rule: aba-->bab ).
+The reduced word #46 in this level: bcadbcdaba ( Parent node: bacdbcdaba , Applied rule: ac-->ca ).
+The reduced word #47 in this level: babdcbdcab ( Parent node: abadcbdcab , Applied rule: aba-->bab ).
+The reduced word #48 in this level: abdacbdcab ( Parent node: abadcbdcab , Applied rule: ad-->da ).
+The reduced word #49 in this level: babdcdbcab ( Parent node: abadcdbcab , Applied rule: aba-->bab ).
+The reduced word #50 in this level: abdacdbcab ( Parent node: abadcdbcab , Applied rule: ad-->da ).
+The reduced word #51 in this level: abcdacbcab ( Parent node: abcdabcbab , Applied rule: bcb-->cbc ).
+The reduced word #52 in this level: abcdacbacb ( Parent node: abcdabcbab , Applied rule: bcba-->cbac ).
+The reduced word #53 in this level: babdcbadcb ( Parent node: abadcbadcb , Applied rule: aba-->bab ).
+The reduced word #54 in this level: abdacbadcb ( Parent node: abadcbadcb , Applied rule: ad-->da ).
+The reduced word #55 in this level: babdcbdacb ( Parent node: abadcbdacb , Applied rule: aba-->bab ).
+The reduced word #56 in this level: abdacbdacb ( Parent node: abadcbdacb , Applied rule: ad-->da ).
+The reduced word #57 in this level: babdcdbacb ( Parent node: abadcdbacb , Applied rule: aba-->bab ).
+The reduced word #58 in this level: abdacdbacb ( Parent node: abadcdbacb , Applied rule: ad-->da ).
+
+Level: 8
+The reduced word #1 in this level: abdcadbacb ( Parent node: abdacdbacb , Applied rule: ac-->ca ).
+The reduced word #2 in this level: adbacdbacb ( Parent node: abdacdbacb , Applied rule: bd-->db ).
+The reduced word #3 in this level: badbcdbacb ( Parent node: babdcdbacb , Applied rule: bd-->db ).
+The reduced word #4 in this level: abdcabdacb ( Parent node: abdacbdacb , Applied rule: ac-->ca ).
+The reduced word #5 in this level: adbacbdacb ( Parent node: abdacbdacb , Applied rule: bd-->db ).
+The reduced word #6 in this level: badbcbdacb ( Parent node: babdcbdacb , Applied rule: bd-->db ).
+The reduced word #7 in this level: abdcabadcb ( Parent node: abdacbadcb , Applied rule: ac-->ca ).
+The reduced word #8 in this level: adbacbadcb ( Parent node: abdacbadcb , Applied rule: bd-->db ).
+The reduced word #9 in this level: badbcbadcb ( Parent node: babdcbadcb , Applied rule: bd-->db ).
+The reduced word #10 in this level: abcdcabacb ( Parent node: abcdacbacb , Applied rule: ac-->ca ).
+The reduced word #11 in this level: abcdcabcab ( Parent node: abcdacbcab , Applied rule: ac-->ca ).
+The reduced word #12 in this level: abdcadbcab ( Parent node: abdacdbcab , Applied rule: ac-->ca ).
+The reduced word #13 in this level: adbacdbcab ( Parent node: abdacdbcab , Applied rule: bd-->db ).
+The reduced word #14 in this level: badbcdbcab ( Parent node: babdcdbcab , Applied rule: bd-->db ).
+The reduced word #15 in this level: abdcabdcab ( Parent node: abdacbdcab , Applied rule: ac-->ca ).
+The reduced word #16 in this level: adbacbdcab ( Parent node: abdacbdcab , Applied rule: bd-->db ).
+The reduced word #17 in this level: badbcbdcab ( Parent node: babdcbdcab , Applied rule: bd-->db ).
+The reduced word #18 in this level: bcadbcdbab ( Parent node: bcadbcdaba , Applied rule: aba-->bab ).
+The reduced word #19 in this level: bcdabcdaba ( Parent node: bcadbcdaba , Applied rule: ad-->da ).
+The reduced word #20 in this level: bacdcbcdab ( Parent node: bacdbcbdab , Applied rule: bcb-->cbc ).
+The reduced word #21 in this level: bcadbcbdab ( Parent node: bacdbcbdab , Applied rule: ac-->ca ).
+The reduced word #22 in this level: bacdcbcadb ( Parent node: bacdbcbadb , Applied rule: bcb-->cbc ).
+The reduced word #23 in this level: bcadbcbadb ( Parent node: bacdbcbadb , Applied rule: ac-->ca ).
+The reduced word #24 in this level: bacdcbacdb ( Parent node: bacdbcbadb , Applied rule: bcba-->cbac ).
+The reduced word #25 in this level: cbabdcdbca ( Parent node: cbabcdcbca , Applied rule: cdc-->dcd ).
+The reduced word #26 in this level: cbabdcbdca ( Parent node: cbabcdcbca , Applied rule: cdcb-->dcbd ).
+The reduced word #27 in this level: cbabdcdbac ( Parent node: cbabcdcbac , Applied rule: cdc-->dcd ).
+The reduced word #28 in this level: cbabdcbdac ( Parent node: cbabcdcbac , Applied rule: cdcb-->dcbd ).
+The reduced word #29 in this level: cbabdcbadc ( Parent node: cbabcdcbac , Applied rule: cdcba-->dcbad ).
+The reduced word #30 in this level: cabdacdbca ( Parent node: acbdacdbca , Applied rule: ac-->ca ).
+The reduced word #31 in this level: acbdcadbca ( Parent node: acbdacdbca , Applied rule: ac-->ca ).
+The reduced word #32 in this level: acdbacdbca ( Parent node: acbdacdbca , Applied rule: bd-->db ).
+The reduced word #33 in this level: cabdacbdca ( Parent node: acbdacbdca , Applied rule: ac-->ca ).
+The reduced word #34 in this level: acbdcabdca ( Parent node: acbdacbdca , Applied rule: ac-->ca ).
+The reduced word #35 in this level: acdbacbdca ( Parent node: acbdacbdca , Applied rule: bd-->db ).
+The reduced word #36 in this level: acbdcdabca ( Parent node: acbcdcabca , Applied rule: cdc-->dcd ).
+The reduced word #37 in this level: cabcdcabca ( Parent node: acbcdcabca , Applied rule: ac-->ca ).
+The reduced word #38 in this level: cabdacdbac ( Parent node: acbdacdbac , Applied rule: ac-->ca ).
+The reduced word #39 in this level: acbdcadbac ( Parent node: acbdacdbac , Applied rule: ac-->ca ).
+The reduced word #40 in this level: acdbacdbac ( Parent node: acbdacdbac , Applied rule: bd-->db ).
+The reduced word #41 in this level: cabdacbdac ( Parent node: acbdacbdac , Applied rule: ac-->ca ).
+The reduced word #42 in this level: acbdcabdac ( Parent node: acbdacbdac , Applied rule: ac-->ca ).
+The reduced word #43 in this level: acdbacbdac ( Parent node: acbdacbdac , Applied rule: bd-->db ).
+The reduced word #44 in this level: cabdacbadc ( Parent node: acbdacbadc , Applied rule: ac-->ca ).
+The reduced word #45 in this level: acbdcabadc ( Parent node: acbdacbadc , Applied rule: ac-->ca ).
+The reduced word #46 in this level: acdbacbadc ( Parent node: acbdacbadc , Applied rule: bd-->db ).
+The reduced word #47 in this level: abcdbcbabc ( Parent node: abcdbcabac , Applied rule: aba-->bab ).
+The reduced word #48 in this level: acbcdcbabc ( Parent node: acbcdcabac , Applied rule: aba-->bab ).
+The reduced word #49 in this level: acbdcdabac ( Parent node: acbcdcabac , Applied rule: cdc-->dcd ).
+The reduced word #50 in this level: cabcdcabac ( Parent node: acbcdcabac , Applied rule: ac-->ca ).
+The reduced word #51 in this level: bcdbabcbad ( Parent node: bcdabacbad , Applied rule: aba-->bab ).
+The reduced word #52 in this level: bcdabcabad ( Parent node: bcdabacbad , Applied rule: ac-->ca ).
+The reduced word #53 in this level: bacdcbcabd ( Parent node: bacdbcbabd , Applied rule: bcb-->cbc ).
+The reduced word #54 in this level: bcadbcbabd ( Parent node: bacdbcbabd , Applied rule: ac-->ca ).
+The reduced word #55 in this level: bacdcbacbd ( Parent node: bacdbcbabd , Applied rule: bcba-->cbac ).
+The reduced word #56 in this level: bcdbabcbda ( Parent node: bcdabacbda , Applied rule: aba-->bab ).
+The reduced word #57 in this level: bcdabcabda ( Parent node: bcdabacbda , Applied rule: ac-->ca ).
+The reduced word #58 in this level: cbcadcbacd ( Parent node: bcbadcbacd , Applied rule: bcb-->cbc ).
+The reduced word #59 in this level: bcbdacbacd ( Parent node: bcbadcbacd , Applied rule: ad-->da ).
+The reduced word #60 in this level: cbacdcbacd ( Parent node: bcbadcbacd , Applied rule: bcba-->cbac ).
+The reduced word #61 in this level: cbcdabcbad ( Parent node: bcbdabcbad , Applied rule: bcb-->cbc ).
+The reduced word #62 in this level: bcbdacbcad ( Parent node: bcbdabcbad , Applied rule: bcb-->cbc ).
+The reduced word #63 in this level: cbcadcbcad ( Parent node: bcbadcbcad , Applied rule: bcb-->cbc ).
+The reduced word #64 in this level: cbacdcbcad ( Parent node: bcbadcbcad , Applied rule: bcba-->cbac ).
+The reduced word #65 in this level: cbcdabcbda ( Parent node: bcbdabcbda , Applied rule: bcb-->cbc ).
+The reduced word #66 in this level: bcbdacbcda ( Parent node: bcbdabcbda , Applied rule: bcb-->cbc ).
+The reduced word #67 in this level: cbcadcbcda ( Parent node: bcbadcbcda , Applied rule: bcb-->cbc ).
+The reduced word #68 in this level: cbacdcbcda ( Parent node: bcbadcbcda , Applied rule: bcba-->cbac ).
+The reduced word #69 in this level: cbcdabcdba ( Parent node: bcbdabcdba , Applied rule: bcb-->cbc ).
+The reduced word #70 in this level: bcdbabcdba ( Parent node: bcbdabcdba , Applied rule: bd-->db ).
+The reduced word #71 in this level: bcdabcadba ( Parent node: bcdabacdba , Applied rule: ac-->ca ).
+
+Level: 9
+The reduced word #1 in this level: cbadcdbcda ( Parent node: cbacdcbcda , Applied rule: cdc-->dcd ).
+The reduced word #2 in this level: cbadcbdcda ( Parent node: cbacdcbcda , Applied rule: cdcb-->dcbd ).
+The reduced word #3 in this level: cbcdacbcda ( Parent node: cbcadcbcda , Applied rule: ad-->da ).
+The reduced word #4 in this level: bcbdcabcda ( Parent node: bcbdacbcda , Applied rule: ac-->ca ).
+The reduced word #5 in this level: bcdbacbcda ( Parent node: bcbdacbcda , Applied rule: bd-->db ).
+The reduced word #6 in this level: cbadcdbcad ( Parent node: cbacdcbcad , Applied rule: cdc-->dcd ).
+The reduced word #7 in this level: cbadcbdcad ( Parent node: cbacdcbcad , Applied rule: cdcb-->dcbd ).
+The reduced word #8 in this level: cbcdacbcad ( Parent node: cbcadcbcad , Applied rule: ad-->da ).
+The reduced word #9 in this level: bcbdcabcad ( Parent node: bcbdacbcad , Applied rule: ac-->ca ).
+The reduced word #10 in this level: bcdbacbcad ( Parent node: bcbdacbcad , Applied rule: bd-->db ).
+The reduced word #11 in this level: cbcdacbacd ( Parent node: cbcdabcbad , Applied rule: bcba-->cbac ).
+The reduced word #12 in this level: cbadcdbacd ( Parent node: cbacdcbacd , Applied rule: cdc-->dcd ).
+The reduced word #13 in this level: cbadcbdacd ( Parent node: cbacdcbacd , Applied rule: cdcb-->dcbd ).
+The reduced word #14 in this level: cbadcbadcd ( Parent node: cbacdcbacd , Applied rule: cdcba-->dcbad ).
+The reduced word #15 in this level: bcbdcabacd ( Parent node: bcbdacbacd , Applied rule: ac-->ca ).
+The reduced word #16 in this level: bcdbacbacd ( Parent node: bcbdacbacd , Applied rule: bd-->db ).
+The reduced word #17 in this level: badcdbacbd ( Parent node: bacdcbacbd , Applied rule: cdc-->dcd ).
+The reduced word #18 in this level: bcadcbacbd ( Parent node: bacdcbacbd , Applied rule: ac-->ca ).
+The reduced word #19 in this level: badcbdacbd ( Parent node: bacdcbacbd , Applied rule: cdcb-->dcbd ).
+The reduced word #20 in this level: badcbadcbd ( Parent node: bacdcbacbd , Applied rule: cdcba-->dcbad ).
+The reduced word #21 in this level: bcadcbcabd ( Parent node: bcadbcbabd , Applied rule: bcb-->cbc ).
+The reduced word #22 in this level: bcdabcbabd ( Parent node: bcadbcbabd , Applied rule: ad-->da ).
+The reduced word #23 in this level: badcdbcabd ( Parent node: bacdcbcabd , Applied rule: cdc-->dcd ).
+The reduced word #24 in this level: badcbdcabd ( Parent node: bacdcbcabd , Applied rule: cdcb-->dcbd ).
+The reduced word #25 in this level: cabcdcbabc ( Parent node: cabcdcabac , Applied rule: aba-->bab ).
+The reduced word #26 in this level: cabdcdabac ( Parent node: cabcdcabac , Applied rule: cdc-->dcd ).
+The reduced word #27 in this level: acbdcdbabc ( Parent node: acbdcdabac , Applied rule: aba-->bab ).
+The reduced word #28 in this level: acdbcdabac ( Parent node: acbdcdabac , Applied rule: bd-->db ).
+The reduced word #29 in this level: acbdcbdabc ( Parent node: acbcdcbabc , Applied rule: cdcb-->dcbd ).
+The reduced word #30 in this level: acbdcbadbc ( Parent node: acbcdcbabc , Applied rule: cdcba-->dcbad ).
+The reduced word #31 in this level: abcdcbcabc ( Parent node: abcdbcbabc , Applied rule: bcb-->cbc ).
+The reduced word #32 in this level: abcdcbacbc ( Parent node: abcdbcbabc , Applied rule: bcba-->cbac ).
+The reduced word #33 in this level: cadbacbadc ( Parent node: acdbacbadc , Applied rule: ac-->ca ).
+The reduced word #34 in this level: acdbcabadc ( Parent node: acdbacbadc , Applied rule: ac-->ca ).
+The reduced word #35 in this level: acbdcbabdc ( Parent node: acbdcabadc , Applied rule: aba-->bab ).
+The reduced word #36 in this level: cabdcabadc ( Parent node: acbdcabadc , Applied rule: ac-->ca ).
+The reduced word #37 in this level: cadbacbdac ( Parent node: acdbacbdac , Applied rule: ac-->ca ).
+The reduced word #38 in this level: acdbcabdac ( Parent node: acdbacbdac , Applied rule: ac-->ca ).
+The reduced word #39 in this level: cabdcabdac ( Parent node: acbdcabdac , Applied rule: ac-->ca ).
+The reduced word #40 in this level: cadbacdbac ( Parent node: acdbacdbac , Applied rule: ac-->ca ).
+The reduced word #41 in this level: acdbcadbac ( Parent node: acdbacdbac , Applied rule: ac-->ca ).
+The reduced word #42 in this level: cabdcadbac ( Parent node: acbdcadbac , Applied rule: ac-->ca ).
+The reduced word #43 in this level: cabdcdabca ( Parent node: cabcdcabca , Applied rule: cdc-->dcd ).
+The reduced word #44 in this level: acdbcdabca ( Parent node: acbdcdabca , Applied rule: bd-->db ).
+The reduced word #45 in this level: cadbacbdca ( Parent node: acdbacbdca , Applied rule: ac-->ca ).
+The reduced word #46 in this level: acdbcabdca ( Parent node: acdbacbdca , Applied rule: ac-->ca ).
+The reduced word #47 in this level: cabdcabdca ( Parent node: acbdcabdca , Applied rule: ac-->ca ).
+The reduced word #48 in this level: cadbacdbca ( Parent node: acdbacdbca , Applied rule: ac-->ca ).
+The reduced word #49 in this level: acdbcadbca ( Parent node: acdbacdbca , Applied rule: ac-->ca ).
+The reduced word #50 in this level: cabdcadbca ( Parent node: acbdcadbca , Applied rule: ac-->ca ).
+The reduced word #51 in this level: cbadbcbadc ( Parent node: cbabdcbadc , Applied rule: bd-->db ).
+The reduced word #52 in this level: cbadbcbdac ( Parent node: cbabdcbdac , Applied rule: bd-->db ).
+The reduced word #53 in this level: cbadbcdbac ( Parent node: cbabdcdbac , Applied rule: bd-->db ).
+The reduced word #54 in this level: cbadbcbdca ( Parent node: cbabdcbdca , Applied rule: bd-->db ).
+The reduced word #55 in this level: cbadbcdbca ( Parent node: cbabdcdbca , Applied rule: bd-->db ).
+The reduced word #56 in this level: badcdbacdb ( Parent node: bacdcbacdb , Applied rule: cdc-->dcd ).
+The reduced word #57 in this level: bcadcbacdb ( Parent node: bacdcbacdb , Applied rule: ac-->ca ).
+The reduced word #58 in this level: badcbdacdb ( Parent node: bacdcbacdb , Applied rule: cdcb-->dcbd ).
+The reduced word #59 in this level: badcbadcdb ( Parent node: bacdcbacdb , Applied rule: cdcba-->dcbad ).
+The reduced word #60 in this level: bcadcbcadb ( Parent node: bcadbcbadb , Applied rule: bcb-->cbc ).
+The reduced word #61 in this level: bcdabcbadb ( Parent node: bcadbcbadb , Applied rule: ad-->da ).
+The reduced word #62 in this level: badcdbcadb ( Parent node: bacdcbcadb , Applied rule: cdc-->dcd ).
+The reduced word #63 in this level: badcbdcadb ( Parent node: bacdcbcadb , Applied rule: cdcb-->dcbd ).
+The reduced word #64 in this level: bcadcbcdab ( Parent node: bcadbcbdab , Applied rule: bcb-->cbc ).
+The reduced word #65 in this level: bcdabcbdab ( Parent node: bcadbcbdab , Applied rule: ad-->da ).
+The reduced word #66 in this level: badcdbcdab ( Parent node: bacdcbcdab , Applied rule: cdc-->dcd ).
+The reduced word #67 in this level: badcbdcdab ( Parent node: bacdcbcdab , Applied rule: cdcb-->dcbd ).
+The reduced word #68 in this level: bcdabcdbab ( Parent node: bcdabcdaba , Applied rule: aba-->bab ).
+The reduced word #69 in this level: badcbcdcab ( Parent node: badbcbdcab , Applied rule: bcb-->cbc ).
+The reduced word #70 in this level: bdabcbdcab ( Parent node: badbcbdcab , Applied rule: ad-->da ).
+The reduced word #71 in this level: adbcabdcab ( Parent node: adbacbdcab , Applied rule: ac-->ca ).
+The reduced word #72 in this level: dabacbdcab ( Parent node: adbacbdcab , Applied rule: ad-->da ).
+The reduced word #73 in this level: bdabcdbcab ( Parent node: badbcdbcab , Applied rule: ad-->da ).
+The reduced word #74 in this level: adbcadbcab ( Parent node: adbacdbcab , Applied rule: ac-->ca ).
+The reduced word #75 in this level: dabacdbcab ( Parent node: adbacdbcab , Applied rule: ad-->da ).
+The reduced word #76 in this level: abdcdabcab ( Parent node: abdcadbcab , Applied rule: ad-->da ).
+The reduced word #77 in this level: abcdcbabcb ( Parent node: abcdcabacb , Applied rule: aba-->bab ).
+The reduced word #78 in this level: abdcdabacb ( Parent node: abcdcabacb , Applied rule: cdc-->dcd ).
+The reduced word #79 in this level: badcbcadcb ( Parent node: badbcbadcb , Applied rule: bcb-->cbc ).
+The reduced word #80 in this level: bdabcbadcb ( Parent node: badbcbadcb , Applied rule: ad-->da ).
+The reduced word #81 in this level: badcbacdcb ( Parent node: badbcbadcb , Applied rule: bcba-->cbac ).
+The reduced word #82 in this level: adbcabadcb ( Parent node: adbacbadcb , Applied rule: ac-->ca ).
+The reduced word #83 in this level: dabacbadcb ( Parent node: adbacbadcb , Applied rule: ad-->da ).
+The reduced word #84 in this level: abdcbabdcb ( Parent node: abdcabadcb , Applied rule: aba-->bab ).
+The reduced word #85 in this level: badcbcdacb ( Parent node: badbcbdacb , Applied rule: bcb-->cbc ).
+The reduced word #86 in this level: bdabcbdacb ( Parent node: badbcbdacb , Applied rule: ad-->da ).
+The reduced word #87 in this level: adbcabdacb ( Parent node: adbacbdacb , Applied rule: ac-->ca ).
+The reduced word #88 in this level: dabacbdacb ( Parent node: adbacbdacb , Applied rule: ad-->da ).
+The reduced word #89 in this level: bdabcdbacb ( Parent node: badbcdbacb , Applied rule: ad-->da ).
+The reduced word #90 in this level: adbcadbacb ( Parent node: adbacdbacb , Applied rule: ac-->ca ).
+The reduced word #91 in this level: dabacdbacb ( Parent node: adbacdbacb , Applied rule: ad-->da ).
+
+Level: 10
+The reduced word #1 in this level: dbabcdbacb ( Parent node: dabacdbacb , Applied rule: aba-->bab ).
+The reduced word #2 in this level: dabcadbacb ( Parent node: dabacdbacb , Applied rule: ac-->ca ).
+The reduced word #3 in this level: adbcdabacb ( Parent node: adbcadbacb , Applied rule: ad-->da ).
+The reduced word #4 in this level: dbabcbdacb ( Parent node: dabacbdacb , Applied rule: aba-->bab ).
+The reduced word #5 in this level: dabcabdacb ( Parent node: dabacbdacb , Applied rule: ac-->ca ).
+The reduced word #6 in this level: bdacbcdacb ( Parent node: bdabcbdacb , Applied rule: bcb-->cbc ).
+The reduced word #7 in this level: adbcbabdcb ( Parent node: abdcbabdcb , Applied rule: bd-->db ).
+The reduced word #8 in this level: abdcbadbcb ( Parent node: abdcbabdcb , Applied rule: bd-->db ).
+The reduced word #9 in this level: dbabcbadcb ( Parent node: dabacbadcb , Applied rule: aba-->bab ).
+The reduced word #10 in this level: dabcabadcb ( Parent node: dabacbadcb , Applied rule: ac-->ca ).
+The reduced word #11 in this level: bdacbacdcb ( Parent node: badcbacdcb , Applied rule: ad-->da ).
+The reduced word #12 in this level: bdacbcadcb ( Parent node: bdabcbadcb , Applied rule: bcb-->cbc ).
+The reduced word #13 in this level: abdcdbabcb ( Parent node: abdcdabacb , Applied rule: aba-->bab ).
+The reduced word #14 in this level: abdcbdabcb ( Parent node: abcdcbabcb , Applied rule: cdcb-->dcbd ).
+The reduced word #15 in this level: adbcdabcab ( Parent node: abdcdabcab , Applied rule: bd-->db ).
+The reduced word #16 in this level: dbabcdbcab ( Parent node: dabacdbcab , Applied rule: aba-->bab ).
+The reduced word #17 in this level: dabcadbcab ( Parent node: dabacdbcab , Applied rule: ac-->ca ).
+The reduced word #18 in this level: dbabcbdcab ( Parent node: dabacbdcab , Applied rule: aba-->bab ).
+The reduced word #19 in this level: dabcabdcab ( Parent node: dabacbdcab , Applied rule: ac-->ca ).
+The reduced word #20 in this level: bdacbcdcab ( Parent node: bdabcbdcab , Applied rule: bcb-->cbc ).
+The reduced word #21 in this level: bdacbdcdab ( Parent node: badcbdcdab , Applied rule: ad-->da ).
+The reduced word #22 in this level: bdacdbcdab ( Parent node: badcdbcdab , Applied rule: ad-->da ).
+The reduced word #23 in this level: bcdacbcdab ( Parent node: bcdabcbdab , Applied rule: bcb-->cbc ).
+The reduced word #24 in this level: bdacbdcadb ( Parent node: badcbdcadb , Applied rule: ad-->da ).
+The reduced word #25 in this level: bdacdbcadb ( Parent node: badcdbcadb , Applied rule: ad-->da ).
+The reduced word #26 in this level: bcdacbcadb ( Parent node: bcdabcbadb , Applied rule: bcb-->cbc ).
+The reduced word #27 in this level: bcdacbacdb ( Parent node: bcdabcbadb , Applied rule: bcba-->cbac ).
+The reduced word #28 in this level: bdacbadcdb ( Parent node: badcbadcdb , Applied rule: ad-->da ).
+The reduced word #29 in this level: bdacbdacdb ( Parent node: badcbdacdb , Applied rule: ad-->da ).
+The reduced word #30 in this level: bdacdbacdb ( Parent node: badcdbacdb , Applied rule: ad-->da ).
+The reduced word #31 in this level: cbdabcdbca ( Parent node: cbadbcdbca , Applied rule: ad-->da ).
+The reduced word #32 in this level: cbadcbcdca ( Parent node: cbadbcbdca , Applied rule: bcb-->cbc ).
+The reduced word #33 in this level: cbdabcbdca ( Parent node: cbadbcbdca , Applied rule: ad-->da ).
+The reduced word #34 in this level: cbdabcdbac ( Parent node: cbadbcdbac , Applied rule: ad-->da ).
+The reduced word #35 in this level: cbadcbcdac ( Parent node: cbadbcbdac , Applied rule: bcb-->cbc ).
+The reduced word #36 in this level: cbdabcbdac ( Parent node: cbadbcbdac , Applied rule: ad-->da ).
+The reduced word #37 in this level: cbadcbcadc ( Parent node: cbadbcbadc , Applied rule: bcb-->cbc ).
+The reduced word #38 in this level: cbdabcbadc ( Parent node: cbadbcbadc , Applied rule: ad-->da ).
+The reduced word #39 in this level: cbadcbacdc ( Parent node: cbadbcbadc , Applied rule: bcba-->cbac ).
+The reduced word #40 in this level: cadbcadbca ( Parent node: cabdcadbca , Applied rule: bd-->db ).
+The reduced word #41 in this level: cdabacdbca ( Parent node: cadbacdbca , Applied rule: ad-->da ).
+The reduced word #42 in this level: cadbcabdca ( Parent node: cabdcabdca , Applied rule: bd-->db ).
+The reduced word #43 in this level: cdabacbdca ( Parent node: cadbacbdca , Applied rule: ad-->da ).
+The reduced word #44 in this level: cadbcdabca ( Parent node: acdbcdabca , Applied rule: ac-->ca ).
+The reduced word #45 in this level: cadbcadbac ( Parent node: cabdcadbac , Applied rule: bd-->db ).
+The reduced word #46 in this level: cdabacdbac ( Parent node: cadbacdbac , Applied rule: ad-->da ).
+The reduced word #47 in this level: cadbcabdac ( Parent node: cabdcabdac , Applied rule: bd-->db ).
+The reduced word #48 in this level: cdabacbdac ( Parent node: cadbacbdac , Applied rule: ad-->da ).
+The reduced word #49 in this level: cabdcbabdc ( Parent node: cabdcabadc , Applied rule: aba-->bab ).
+The reduced word #50 in this level: cadbcabadc ( Parent node: cabdcabadc , Applied rule: bd-->db ).
+The reduced word #51 in this level: acdbcbabdc ( Parent node: acbdcbabdc , Applied rule: bd-->db ).
+The reduced word #52 in this level: cdabacbadc ( Parent node: cadbacbadc , Applied rule: ad-->da ).
+The reduced word #53 in this level: abdcdbacbc ( Parent node: abcdcbacbc , Applied rule: cdc-->dcd ).
+The reduced word #54 in this level: abdcbdacbc ( Parent node: abcdcbacbc , Applied rule: cdcb-->dcbd ).
+The reduced word #55 in this level: abdcbadcbc ( Parent node: abcdcbacbc , Applied rule: cdcba-->dcbad ).
+The reduced word #56 in this level: abdcdbcabc ( Parent node: abcdcbcabc , Applied rule: cdc-->dcd ).
+The reduced word #57 in this level: abdcbdcabc ( Parent node: abcdcbcabc , Applied rule: cdcb-->dcbd ).
+The reduced word #58 in this level: cabdcbadbc ( Parent node: acbdcbadbc , Applied rule: ac-->ca ).
+The reduced word #59 in this level: acdbcbadbc ( Parent node: acbdcbadbc , Applied rule: bd-->db ).
+The reduced word #60 in this level: cabdcbdabc ( Parent node: acbdcbdabc , Applied rule: ac-->ca ).
+The reduced word #61 in this level: acdbcbdabc ( Parent node: acbdcbdabc , Applied rule: bd-->db ).
+The reduced word #62 in this level: acdbcdbabc ( Parent node: acdbcdabac , Applied rule: aba-->bab ).
+The reduced word #63 in this level: cadbcdabac ( Parent node: acdbcdabac , Applied rule: ac-->ca ).
+The reduced word #64 in this level: cabdcdbabc ( Parent node: acbdcdbabc , Applied rule: ac-->ca ).
+The reduced word #65 in this level: bdacbdcabd ( Parent node: badcbdcabd , Applied rule: ad-->da ).
+The reduced word #66 in this level: bdacdbcabd ( Parent node: badcdbcabd , Applied rule: ad-->da ).
+The reduced word #67 in this level: bcdacbcabd ( Parent node: bcdabcbabd , Applied rule: bcb-->cbc ).
+The reduced word #68 in this level: bcdacbacbd ( Parent node: bcdabcbabd , Applied rule: bcba-->cbac ).
+The reduced word #69 in this level: bdacbadcbd ( Parent node: badcbadcbd , Applied rule: ad-->da ).
+The reduced word #70 in this level: bdacbdacbd ( Parent node: badcbdacbd , Applied rule: ad-->da ).
+The reduced word #71 in this level: bdacdbacbd ( Parent node: badcdbacbd , Applied rule: ad-->da ).
+The reduced word #72 in this level: bcdbcabacd ( Parent node: bcdbacbacd , Applied rule: ac-->ca ).
+The reduced word #73 in this level: bcbdcbabcd ( Parent node: bcbdcabacd , Applied rule: aba-->bab ).
+The reduced word #74 in this level: cbcdcabacd ( Parent node: bcbdcabacd , Applied rule: bcb-->cbc ).
+The reduced word #75 in this level: cbdacbadcd ( Parent node: cbadcbadcd , Applied rule: ad-->da ).
+The reduced word #76 in this level: cbdacbdacd ( Parent node: cbadcbdacd , Applied rule: ad-->da ).
+The reduced word #77 in this level: cbdacdbacd ( Parent node: cbadcdbacd , Applied rule: ad-->da ).
+The reduced word #78 in this level: bcdbcabcad ( Parent node: bcdbacbcad , Applied rule: ac-->ca ).
+The reduced word #79 in this level: cbcdcabcad ( Parent node: bcbdcabcad , Applied rule: bcb-->cbc ).
+The reduced word #80 in this level: cbdacbdcad ( Parent node: cbadcbdcad , Applied rule: ad-->da ).
+The reduced word #81 in this level: cbdacdbcad ( Parent node: cbadcdbcad , Applied rule: ad-->da ).
+The reduced word #82 in this level: bcdbcabcda ( Parent node: bcdbacbcda , Applied rule: ac-->ca ).
+The reduced word #83 in this level: cbcdcabcda ( Parent node: bcbdcabcda , Applied rule: bcb-->cbc ).
+The reduced word #84 in this level: cbdacbdcda ( Parent node: cbadcbdcda , Applied rule: ad-->da ).
+The reduced word #85 in this level: cbdacdbcda ( Parent node: cbadcdbcda , Applied rule: ad-->da ).
+
+Level: 11
+The reduced word #1 in this level: cbdcadbcda ( Parent node: cbdacdbcda , Applied rule: ac-->ca ).
+The reduced word #2 in this level: cdbacdbcda ( Parent node: cbdacdbcda , Applied rule: bd-->db ).
+The reduced word #3 in this level: cbdacbcdca ( Parent node: cbdacbdcda , Applied rule: dcd-->cdc ).
+The reduced word #4 in this level: cbdcabdcda ( Parent node: cbdacbdcda , Applied rule: ac-->ca ).
+The reduced word #5 in this level: cdbacbdcda ( Parent node: cbdacbdcda , Applied rule: bd-->db ).
+The reduced word #6 in this level: cbdcdabcda ( Parent node: cbcdcabcda , Applied rule: cdc-->dcd ).
+The reduced word #7 in this level: cbdcadbcad ( Parent node: cbdacdbcad , Applied rule: ac-->ca ).
+The reduced word #8 in this level: cdbacdbcad ( Parent node: cbdacdbcad , Applied rule: bd-->db ).
+The reduced word #9 in this level: cbdcabdcad ( Parent node: cbdacbdcad , Applied rule: ac-->ca ).
+The reduced word #10 in this level: cdbacbdcad ( Parent node: cbdacbdcad , Applied rule: bd-->db ).
+The reduced word #11 in this level: cbdcdabcad ( Parent node: cbcdcabcad , Applied rule: cdc-->dcd ).
+The reduced word #12 in this level: cbdcadbacd ( Parent node: cbdacdbacd , Applied rule: ac-->ca ).
+The reduced word #13 in this level: cdbacdbacd ( Parent node: cbdacdbacd , Applied rule: bd-->db ).
+The reduced word #14 in this level: cbdcabdacd ( Parent node: cbdacbdacd , Applied rule: ac-->ca ).
+The reduced word #15 in this level: cdbacbdacd ( Parent node: cbdacbdacd , Applied rule: bd-->db ).
+The reduced word #16 in this level: cbdacbacdc ( Parent node: cbdacbadcd , Applied rule: dcd-->cdc ).
+The reduced word #17 in this level: cbdcabadcd ( Parent node: cbdacbadcd , Applied rule: ac-->ca ).
+The reduced word #18 in this level: cdbacbadcd ( Parent node: cbdacbadcd , Applied rule: bd-->db ).
+The reduced word #19 in this level: cbcdcbabcd ( Parent node: cbcdcabacd , Applied rule: aba-->bab ).
+The reduced word #20 in this level: cbdcdabacd ( Parent node: cbcdcabacd , Applied rule: cdc-->dcd ).
+The reduced word #21 in this level: bcdbcbabcd ( Parent node: bcbdcbabcd , Applied rule: bd-->db ).
+The reduced word #22 in this level: bdcadbacbd ( Parent node: bdacdbacbd , Applied rule: ac-->ca ).
+The reduced word #23 in this level: dbacdbacbd ( Parent node: bdacdbacbd , Applied rule: bd-->db ).
+The reduced word #24 in this level: bdcabdacbd ( Parent node: bdacbdacbd , Applied rule: ac-->ca ).
+The reduced word #25 in this level: dbacbdacbd ( Parent node: bdacbdacbd , Applied rule: bd-->db ).
+The reduced word #26 in this level: bdcabadcbd ( Parent node: bdacbadcbd , Applied rule: ac-->ca ).
+The reduced word #27 in this level: dbacbadcbd ( Parent node: bdacbadcbd , Applied rule: bd-->db ).
+The reduced word #28 in this level: bcdcabacbd ( Parent node: bcdacbacbd , Applied rule: ac-->ca ).
+The reduced word #29 in this level: bcdcabcabd ( Parent node: bcdacbcabd , Applied rule: ac-->ca ).
+The reduced word #30 in this level: bdcadbcabd ( Parent node: bdacdbcabd , Applied rule: ac-->ca ).
+The reduced word #31 in this level: dbacdbcabd ( Parent node: bdacdbcabd , Applied rule: bd-->db ).
+The reduced word #32 in this level: bdcabdcabd ( Parent node: bdacbdcabd , Applied rule: ac-->ca ).
+The reduced word #33 in this level: dbacbdcabd ( Parent node: bdacbdcabd , Applied rule: bd-->db ).
+The reduced word #34 in this level: cadbcdbabc ( Parent node: cabdcdbabc , Applied rule: bd-->db ).
+The reduced word #35 in this level: cdabcdabac ( Parent node: cadbcdabac , Applied rule: ad-->da ).
+The reduced word #36 in this level: acdcbcdabc ( Parent node: acdbcbdabc , Applied rule: bcb-->cbc ).
+The reduced word #37 in this level: cadbcbdabc ( Parent node: acdbcbdabc , Applied rule: ac-->ca ).
+The reduced word #38 in this level: acdcbcadbc ( Parent node: acdbcbadbc , Applied rule: bcb-->cbc ).
+The reduced word #39 in this level: cadbcbadbc ( Parent node: acdbcbadbc , Applied rule: ac-->ca ).
+The reduced word #40 in this level: acdcbacdbc ( Parent node: acdbcbadbc , Applied rule: bcba-->cbac ).
+The reduced word #41 in this level: adbcbdcabc ( Parent node: abdcbdcabc , Applied rule: bd-->db ).
+The reduced word #42 in this level: adbcdbcabc ( Parent node: abdcdbcabc , Applied rule: bd-->db ).
+The reduced word #43 in this level: adbcbadcbc ( Parent node: abdcbadcbc , Applied rule: bd-->db ).
+The reduced word #44 in this level: adbcbdacbc ( Parent node: abdcbdacbc , Applied rule: bd-->db ).
+The reduced word #45 in this level: adbcdbacbc ( Parent node: abdcdbacbc , Applied rule: bd-->db ).
+The reduced word #46 in this level: cdbabcbadc ( Parent node: cdabacbadc , Applied rule: aba-->bab ).
+The reduced word #47 in this level: cdabcabadc ( Parent node: cdabacbadc , Applied rule: ac-->ca ).
+The reduced word #48 in this level: acdcbcabdc ( Parent node: acdbcbabdc , Applied rule: bcb-->cbc ).
+The reduced word #49 in this level: cadbcbabdc ( Parent node: acdbcbabdc , Applied rule: ac-->ca ).
+The reduced word #50 in this level: acdcbacbdc ( Parent node: acdbcbabdc , Applied rule: bcba-->cbac ).
+The reduced word #51 in this level: cdbabcbdac ( Parent node: cdabacbdac , Applied rule: aba-->bab ).
+The reduced word #52 in this level: cdabcabdac ( Parent node: cdabacbdac , Applied rule: ac-->ca ).
+The reduced word #53 in this level: cdbabcdbac ( Parent node: cdabacdbac , Applied rule: aba-->bab ).
+The reduced word #54 in this level: cdabcadbac ( Parent node: cdabacdbac , Applied rule: ac-->ca ).
+The reduced word #55 in this level: cdabcdabca ( Parent node: cadbcdabca , Applied rule: ad-->da ).
+The reduced word #56 in this level: cdbabcbdca ( Parent node: cdabacbdca , Applied rule: aba-->bab ).
+The reduced word #57 in this level: cdabcabdca ( Parent node: cdabacbdca , Applied rule: ac-->ca ).
+The reduced word #58 in this level: cdbabcdbca ( Parent node: cdabacdbca , Applied rule: aba-->bab ).
+The reduced word #59 in this level: cdabcadbca ( Parent node: cdabacdbca , Applied rule: ac-->ca ).
+The reduced word #60 in this level: cbdacbcadc ( Parent node: cbdabcbadc , Applied rule: bcb-->cbc ).
+The reduced word #61 in this level: cbdacbcdac ( Parent node: cbdabcbdac , Applied rule: bcb-->cbc ).
+The reduced word #62 in this level: bdcadbacdb ( Parent node: bdacdbacdb , Applied rule: ac-->ca ).
+The reduced word #63 in this level: dbacdbacdb ( Parent node: bdacdbacdb , Applied rule: bd-->db ).
+The reduced word #64 in this level: bdcabdacdb ( Parent node: bdacbdacdb , Applied rule: ac-->ca ).
+The reduced word #65 in this level: dbacbdacdb ( Parent node: bdacbdacdb , Applied rule: bd-->db ).
+The reduced word #66 in this level: bdcabadcdb ( Parent node: bdacbadcdb , Applied rule: ac-->ca ).
+The reduced word #67 in this level: dbacbadcdb ( Parent node: bdacbadcdb , Applied rule: bd-->db ).
+The reduced word #68 in this level: bcdcabacdb ( Parent node: bcdacbacdb , Applied rule: ac-->ca ).
+The reduced word #69 in this level: bcdcabcadb ( Parent node: bcdacbcadb , Applied rule: ac-->ca ).
+The reduced word #70 in this level: bdcadbcadb ( Parent node: bdacdbcadb , Applied rule: ac-->ca ).
+The reduced word #71 in this level: dbacdbcadb ( Parent node: bdacdbcadb , Applied rule: bd-->db ).
+The reduced word #72 in this level: bdcabdcadb ( Parent node: bdacbdcadb , Applied rule: ac-->ca ).
+The reduced word #73 in this level: dbacbdcadb ( Parent node: bdacbdcadb , Applied rule: bd-->db ).
+The reduced word #74 in this level: bcdcabcdab ( Parent node: bcdacbcdab , Applied rule: ac-->ca ).
+The reduced word #75 in this level: bdcadbcdab ( Parent node: bdacdbcdab , Applied rule: ac-->ca ).
+The reduced word #76 in this level: dbacdbcdab ( Parent node: bdacdbcdab , Applied rule: bd-->db ).
+The reduced word #77 in this level: bdcabdcdab ( Parent node: bdacbdcdab , Applied rule: ac-->ca ).
+The reduced word #78 in this level: dbacbdcdab ( Parent node: bdacbdcdab , Applied rule: bd-->db ).
+The reduced word #79 in this level: bdcabcdcab ( Parent node: bdacbcdcab , Applied rule: ac-->ca ).
+The reduced word #80 in this level: dbacbcdcab ( Parent node: bdacbcdcab , Applied rule: bd-->db ).
+The reduced word #81 in this level: dabcdabcab ( Parent node: dabcadbcab , Applied rule: ad-->da ).
+The reduced word #82 in this level: adbcbdabcb ( Parent node: abdcbdabcb , Applied rule: bd-->db ).
+The reduced word #83 in this level: adbcdbabcb ( Parent node: abdcdbabcb , Applied rule: bd-->db ).
+The reduced word #84 in this level: bdcabcadcb ( Parent node: bdacbcadcb , Applied rule: ac-->ca ).
+The reduced word #85 in this level: dbacbcadcb ( Parent node: bdacbcadcb , Applied rule: bd-->db ).
+The reduced word #86 in this level: bdcabacdcb ( Parent node: bdacbacdcb , Applied rule: ac-->ca ).
+The reduced word #87 in this level: dbacbacdcb ( Parent node: bdacbacdcb , Applied rule: bd-->db ).
+The reduced word #88 in this level: dabcbabdcb ( Parent node: dabcabadcb , Applied rule: aba-->bab ).
+The reduced word #89 in this level: adbcbadbcb ( Parent node: abdcbadbcb , Applied rule: bd-->db ).
+The reduced word #90 in this level: adcbcabdcb ( Parent node: adbcbabdcb , Applied rule: bcb-->cbc ).
+The reduced word #91 in this level: adcbacbdcb ( Parent node: adbcbabdcb , Applied rule: bcba-->cbac ).
+The reduced word #92 in this level: bdcabcdacb ( Parent node: bdacbcdacb , Applied rule: ac-->ca ).
+The reduced word #93 in this level: dbacbcdacb ( Parent node: bdacbcdacb , Applied rule: bd-->db ).
+The reduced word #94 in this level: dabcdabacb ( Parent node: adbcdabacb , Applied rule: ad-->da ).
+
+Level: 12
+The reduced word #1 in this level: dabcdbabcb ( Parent node: dabcdabacb , Applied rule: aba-->bab ).
+The reduced word #2 in this level: dbcabcdacb ( Parent node: dbacbcdacb , Applied rule: ac-->ca ).
+The reduced word #3 in this level: dacbacbdcb ( Parent node: adcbacbdcb , Applied rule: ad-->da ).
+The reduced word #4 in this level: adcbacdbcb ( Parent node: adcbacbdcb , Applied rule: bd-->db ).
+The reduced word #5 in this level: dacbcabdcb ( Parent node: adcbcabdcb , Applied rule: ad-->da ).
+The reduced word #6 in this level: adcbcadbcb ( Parent node: adcbcabdcb , Applied rule: bd-->db ).
+The reduced word #7 in this level: dabcbadbcb ( Parent node: adbcbadbcb , Applied rule: ad-->da ).
+The reduced word #8 in this level: dbcabacdcb ( Parent node: dbacbacdcb , Applied rule: ac-->ca ).
+The reduced word #9 in this level: bdcbabcdcb ( Parent node: bdcabacdcb , Applied rule: aba-->bab ).
+The reduced word #10 in this level: dbcabcadcb ( Parent node: dbacbcadcb , Applied rule: ac-->ca ).
+The reduced word #11 in this level: adcbcdabcb ( Parent node: adbcbdabcb , Applied rule: bcb-->cbc ).
+The reduced word #12 in this level: dabcbdabcb ( Parent node: adbcbdabcb , Applied rule: ad-->da ).
+The reduced word #13 in this level: dbcabcdcab ( Parent node: dbacbcdcab , Applied rule: ac-->ca ).
+The reduced word #14 in this level: dbcabdcdab ( Parent node: dbacbdcdab , Applied rule: ac-->ca ).
+The reduced word #15 in this level: dbcadbcdab ( Parent node: dbacdbcdab , Applied rule: ac-->ca ).
+The reduced word #16 in this level: bdcdabcdab ( Parent node: bdcadbcdab , Applied rule: ad-->da ).
+The reduced word #17 in this level: dbcabdcadb ( Parent node: dbacbdcadb , Applied rule: ac-->ca ).
+The reduced word #18 in this level: dbcadbcadb ( Parent node: dbacdbcadb , Applied rule: ac-->ca ).
+The reduced word #19 in this level: bdcdabcadb ( Parent node: bdcadbcadb , Applied rule: ad-->da ).
+The reduced word #20 in this level: bcdcbabcdb ( Parent node: bcdcabacdb , Applied rule: aba-->bab ).
+The reduced word #21 in this level: bdcdabacdb ( Parent node: bcdcabacdb , Applied rule: cdc-->dcd ).
+The reduced word #22 in this level: dbcabadcdb ( Parent node: dbacbadcdb , Applied rule: ac-->ca ).
+The reduced word #23 in this level: bdcbabdcdb ( Parent node: bdcabadcdb , Applied rule: aba-->bab ).
+The reduced word #24 in this level: dbcabdacdb ( Parent node: dbacbdacdb , Applied rule: ac-->ca ).
+The reduced word #25 in this level: dbcadbacdb ( Parent node: dbacdbacdb , Applied rule: ac-->ca ).
+The reduced word #26 in this level: cbdcabcdac ( Parent node: cbdacbcdac , Applied rule: ac-->ca ).
+The reduced word #27 in this level: cdbacbcdac ( Parent node: cbdacbcdac , Applied rule: bd-->db ).
+The reduced word #28 in this level: cbdcabcadc ( Parent node: cbdacbcadc , Applied rule: ac-->ca ).
+The reduced word #29 in this level: cdbacbcadc ( Parent node: cbdacbcadc , Applied rule: bd-->db ).
+The reduced word #30 in this level: cdbacbcdca ( Parent node: cdbabcbdca , Applied rule: bcb-->cbc ).
+The reduced word #31 in this level: adcdbacbdc ( Parent node: acdcbacbdc , Applied rule: cdc-->dcd ).
+The reduced word #32 in this level: cadcbacbdc ( Parent node: acdcbacbdc , Applied rule: ac-->ca ).
+The reduced word #33 in this level: adcbdacbdc ( Parent node: acdcbacbdc , Applied rule: cdcb-->dcbd ).
+The reduced word #34 in this level: adcbadcbdc ( Parent node: acdcbacbdc , Applied rule: cdcba-->dcbad ).
+The reduced word #35 in this level: cadcbcabdc ( Parent node: cadbcbabdc , Applied rule: bcb-->cbc ).
+The reduced word #36 in this level: cdabcbabdc ( Parent node: cadbcbabdc , Applied rule: ad-->da ).
+The reduced word #37 in this level: adcdbcabdc ( Parent node: acdcbcabdc , Applied rule: cdc-->dcd ).
+The reduced word #38 in this level: adcbdcabdc ( Parent node: acdcbcabdc , Applied rule: cdcb-->dcbd ).
+The reduced word #39 in this level: cdbacbacdc ( Parent node: cdbabcbadc , Applied rule: bcba-->cbac ).
+The reduced word #40 in this level: dabcdbacbc ( Parent node: adbcdbacbc , Applied rule: ad-->da ).
+The reduced word #41 in this level: adcbcdacbc ( Parent node: adbcbdacbc , Applied rule: bcb-->cbc ).
+The reduced word #42 in this level: dabcbdacbc ( Parent node: adbcbdacbc , Applied rule: ad-->da ).
+The reduced word #43 in this level: adcbcadcbc ( Parent node: adbcbadcbc , Applied rule: bcb-->cbc ).
+The reduced word #44 in this level: dabcbadcbc ( Parent node: adbcbadcbc , Applied rule: ad-->da ).
+The reduced word #45 in this level: adcbacdcbc ( Parent node: adbcbadcbc , Applied rule: bcba-->cbac ).
+The reduced word #46 in this level: dabcdbcabc ( Parent node: adbcdbcabc , Applied rule: ad-->da ).
+The reduced word #47 in this level: adcbcdcabc ( Parent node: adbcbdcabc , Applied rule: bcb-->cbc ).
+The reduced word #48 in this level: dabcbdcabc ( Parent node: adbcbdcabc , Applied rule: ad-->da ).
+The reduced word #49 in this level: adcdbacdbc ( Parent node: acdcbacdbc , Applied rule: cdc-->dcd ).
+The reduced word #50 in this level: cadcbacdbc ( Parent node: acdcbacdbc , Applied rule: ac-->ca ).
+The reduced word #51 in this level: adcbdacdbc ( Parent node: acdcbacdbc , Applied rule: cdcb-->dcbd ).
+The reduced word #52 in this level: adcbadcdbc ( Parent node: acdcbacdbc , Applied rule: cdcba-->dcbad ).
+The reduced word #53 in this level: cadcbcadbc ( Parent node: cadbcbadbc , Applied rule: bcb-->cbc ).
+The reduced word #54 in this level: cdabcbadbc ( Parent node: cadbcbadbc , Applied rule: ad-->da ).
+The reduced word #55 in this level: adcdbcadbc ( Parent node: acdcbcadbc , Applied rule: cdc-->dcd ).
+The reduced word #56 in this level: adcbdcadbc ( Parent node: acdcbcadbc , Applied rule: cdcb-->dcbd ).
+The reduced word #57 in this level: cadcbcdabc ( Parent node: cadbcbdabc , Applied rule: bcb-->cbc ).
+The reduced word #58 in this level: cdabcbdabc ( Parent node: cadbcbdabc , Applied rule: ad-->da ).
+The reduced word #59 in this level: adcdbcdabc ( Parent node: acdcbcdabc , Applied rule: cdc-->dcd ).
+The reduced word #60 in this level: adcbdcdabc ( Parent node: acdcbcdabc , Applied rule: cdcb-->dcbd ).
+The reduced word #61 in this level: cdabcdbabc ( Parent node: cdabcdabac , Applied rule: aba-->bab ).
+The reduced word #62 in this level: dbcabdcabd ( Parent node: dbacbdcabd , Applied rule: ac-->ca ).
+The reduced word #63 in this level: dbcadbcabd ( Parent node: dbacdbcabd , Applied rule: ac-->ca ).
+The reduced word #64 in this level: bdcdabcabd ( Parent node: bdcadbcabd , Applied rule: ad-->da ).
+The reduced word #65 in this level: bcdcbabcbd ( Parent node: bcdcabacbd , Applied rule: aba-->bab ).
+The reduced word #66 in this level: bdcdabacbd ( Parent node: bcdcabacbd , Applied rule: cdc-->dcd ).
+The reduced word #67 in this level: dbcabadcbd ( Parent node: dbacbadcbd , Applied rule: ac-->ca ).
+The reduced word #68 in this level: bdcbabdcbd ( Parent node: bdcabadcbd , Applied rule: aba-->bab ).
+The reduced word #69 in this level: dbcabdacbd ( Parent node: dbacbdacbd , Applied rule: ac-->ca ).
+The reduced word #70 in this level: dbcadbacbd ( Parent node: dbacdbacbd , Applied rule: ac-->ca ).
+The reduced word #71 in this level: bcdcbcabcd ( Parent node: bcdbcbabcd , Applied rule: bcb-->cbc ).
+The reduced word #72 in this level: bcdcbacbcd ( Parent node: bcdbcbabcd , Applied rule: bcba-->cbac ).
+The reduced word #73 in this level: cbdcdbabcd ( Parent node: cbdcdabacd , Applied rule: aba-->bab ).
+The reduced word #74 in this level: cdbcdabacd ( Parent node: cbdcdabacd , Applied rule: bd-->db ).
+The reduced word #75 in this level: cbdcbdabcd ( Parent node: cbcdcbabcd , Applied rule: cdcb-->dcbd ).
+The reduced word #76 in this level: cbdcbadbcd ( Parent node: cbcdcbabcd , Applied rule: cdcba-->dcbad ).
+The reduced word #77 in this level: cdbcabadcd ( Parent node: cdbacbadcd , Applied rule: ac-->ca ).
+The reduced word #78 in this level: cbdcbabdcd ( Parent node: cbdcabadcd , Applied rule: aba-->bab ).
+The reduced word #79 in this level: cbdcabacdc ( Parent node: cbdcabadcd , Applied rule: dcd-->cdc ).
+The reduced word #80 in this level: cdbcabdacd ( Parent node: cdbacbdacd , Applied rule: ac-->ca ).
+The reduced word #81 in this level: cdbcadbacd ( Parent node: cdbacdbacd , Applied rule: ac-->ca ).
+The reduced word #82 in this level: cdbcdabcad ( Parent node: cbdcdabcad , Applied rule: bd-->db ).
+The reduced word #83 in this level: cdbcabdcad ( Parent node: cdbacbdcad , Applied rule: ac-->ca ).
+The reduced word #84 in this level: cdbcadbcad ( Parent node: cdbacdbcad , Applied rule: ac-->ca ).
+The reduced word #85 in this level: cdbcdabcda ( Parent node: cbdcdabcda , Applied rule: bd-->db ).
+The reduced word #86 in this level: cdbcabdcda ( Parent node: cdbacbdcda , Applied rule: ac-->ca ).
+The reduced word #87 in this level: cbdcabcdca ( Parent node: cbdcabdcda , Applied rule: dcd-->cdc ).
+The reduced word #88 in this level: cdbcadbcda ( Parent node: cdbacdbcda , Applied rule: ac-->ca ).
+
+Level: 13
+The reduced word #1 in this level: cdbcabcdca ( Parent node: cbdcabcdca , Applied rule: bd-->db ).
+The reduced word #2 in this level: cbdcbabcdc ( Parent node: cbdcabacdc , Applied rule: aba-->bab ).
+The reduced word #3 in this level: cdbcabacdc ( Parent node: cbdcabacdc , Applied rule: bd-->db ).
+The reduced word #4 in this level: cdbcbabdcd ( Parent node: cbdcbabdcd , Applied rule: bd-->db ).
+The reduced word #5 in this level: cdbcbadbcd ( Parent node: cbdcbadbcd , Applied rule: bd-->db ).
+The reduced word #6 in this level: cdbcbdabcd ( Parent node: cbdcbdabcd , Applied rule: bd-->db ).
+The reduced word #7 in this level: cdbcdbabcd ( Parent node: cdbcdabacd , Applied rule: aba-->bab ).
+The reduced word #8 in this level: bdcdbacbcd ( Parent node: bcdcbacbcd , Applied rule: cdc-->dcd ).
+The reduced word #9 in this level: bdcbdacbcd ( Parent node: bcdcbacbcd , Applied rule: cdcb-->dcbd ).
+The reduced word #10 in this level: bdcbadcbcd ( Parent node: bcdcbacbcd , Applied rule: cdcba-->dcbad ).
+The reduced word #11 in this level: bdcdbcabcd ( Parent node: bcdcbcabcd , Applied rule: cdc-->dcd ).
+The reduced word #12 in this level: bdcbdcabcd ( Parent node: bcdcbcabcd , Applied rule: cdcb-->dcbd ).
+The reduced word #13 in this level: dbcdabacbd ( Parent node: dbcadbacbd , Applied rule: ad-->da ).
+The reduced word #14 in this level: dbcbabdcbd ( Parent node: bdcbabdcbd , Applied rule: bd-->db ).
+The reduced word #15 in this level: bdcbadbcbd ( Parent node: bdcbabdcbd , Applied rule: bd-->db ).
+The reduced word #16 in this level: bdcdbabcbd ( Parent node: bdcdabacbd , Applied rule: aba-->bab ).
+The reduced word #17 in this level: bdcbdabcbd ( Parent node: bcdcbabcbd , Applied rule: cdcb-->dcbd ).
+The reduced word #18 in this level: dbcdabcabd ( Parent node: bdcdabcabd , Applied rule: bd-->db ).
+The reduced word #19 in this level: dacbdcdabc ( Parent node: adcbdcdabc , Applied rule: ad-->da ).
+The reduced word #20 in this level: dacdbcdabc ( Parent node: adcdbcdabc , Applied rule: ad-->da ).
+The reduced word #21 in this level: cdacbcdabc ( Parent node: cdabcbdabc , Applied rule: bcb-->cbc ).
+The reduced word #22 in this level: dacbdcadbc ( Parent node: adcbdcadbc , Applied rule: ad-->da ).
+The reduced word #23 in this level: dacdbcadbc ( Parent node: adcdbcadbc , Applied rule: ad-->da ).
+The reduced word #24 in this level: cdacbcadbc ( Parent node: cdabcbadbc , Applied rule: bcb-->cbc ).
+The reduced word #25 in this level: cdacbacdbc ( Parent node: cdabcbadbc , Applied rule: bcba-->cbac ).
+The reduced word #26 in this level: dacbadcdbc ( Parent node: adcbadcdbc , Applied rule: ad-->da ).
+The reduced word #27 in this level: dacbdacdbc ( Parent node: adcbdacdbc , Applied rule: ad-->da ).
+The reduced word #28 in this level: dacdbacdbc ( Parent node: adcdbacdbc , Applied rule: ad-->da ).
+The reduced word #29 in this level: dacbcdcabc ( Parent node: dabcbdcabc , Applied rule: bcb-->cbc ).
+The reduced word #30 in this level: dacbacdcbc ( Parent node: adcbacdcbc , Applied rule: ad-->da ).
+The reduced word #31 in this level: dacbcadcbc ( Parent node: dabcbadcbc , Applied rule: bcb-->cbc ).
+The reduced word #32 in this level: dacbcdacbc ( Parent node: dabcbdacbc , Applied rule: bcb-->cbc ).
+The reduced word #33 in this level: dacbdcabdc ( Parent node: adcbdcabdc , Applied rule: ad-->da ).
+The reduced word #34 in this level: dacdbcabdc ( Parent node: adcdbcabdc , Applied rule: ad-->da ).
+The reduced word #35 in this level: cdacbcabdc ( Parent node: cdabcbabdc , Applied rule: bcb-->cbc ).
+The reduced word #36 in this level: cdacbacbdc ( Parent node: cdabcbabdc , Applied rule: bcba-->cbac ).
+The reduced word #37 in this level: dacbadcbdc ( Parent node: adcbadcbdc , Applied rule: ad-->da ).
+The reduced word #38 in this level: dacbdacbdc ( Parent node: adcbdacbdc , Applied rule: ad-->da ).
+The reduced word #39 in this level: dacdbacbdc ( Parent node: adcdbacbdc , Applied rule: ad-->da ).
+The reduced word #40 in this level: cdbcabcadc ( Parent node: cdbacbcadc , Applied rule: ac-->ca ).
+The reduced word #41 in this level: cdbcabcdac ( Parent node: cdbacbcdac , Applied rule: ac-->ca ).
+The reduced word #42 in this level: dbcdabacdb ( Parent node: dbcadbacdb , Applied rule: ad-->da ).
+The reduced word #43 in this level: dbcbabdcdb ( Parent node: bdcbabdcdb , Applied rule: bd-->db ).
+The reduced word #44 in this level: bdcbadbcdb ( Parent node: bdcbabdcdb , Applied rule: bd-->db ).
+The reduced word #45 in this level: bdcdbabcdb ( Parent node: bdcdabacdb , Applied rule: aba-->bab ).
+The reduced word #46 in this level: bdcbdabcdb ( Parent node: bcdcbabcdb , Applied rule: cdcb-->dcbd ).
+The reduced word #47 in this level: dbcdabcadb ( Parent node: bdcdabcadb , Applied rule: bd-->db ).
+The reduced word #48 in this level: dbcdabcdab ( Parent node: bdcdabcdab , Applied rule: bd-->db ).
+The reduced word #49 in this level: dacbcdabcb ( Parent node: dabcbdabcb , Applied rule: bcb-->cbc ).
+The reduced word #50 in this level: dbcbabcdcb ( Parent node: bdcbabcdcb , Applied rule: bd-->db ).
+The reduced word #51 in this level: dacbcadbcb ( Parent node: dabcbadbcb , Applied rule: bcb-->cbc ).
+The reduced word #52 in this level: dacbacdbcb ( Parent node: dabcbadbcb , Applied rule: bcba-->cbac ).
+The reduced word #53 in this level: dcabcabdcb ( Parent node: dacbcabdcb , Applied rule: ac-->ca ).
+The reduced word #54 in this level: dcabacbdcb ( Parent node: dacbacbdcb , Applied rule: ac-->ca ).
+
+Level: 14
+The reduced word #1 in this level: dcbabcbdcb ( Parent node: dcabacbdcb , Applied rule: aba-->bab ).
+The reduced word #2 in this level: dcabacdbcb ( Parent node: dcabacbdcb , Applied rule: bd-->db ).
+The reduced word #3 in this level: dcabcadbcb ( Parent node: dcabcabdcb , Applied rule: bd-->db ).
+The reduced word #4 in this level: dcbcabcdcb ( Parent node: dbcbabcdcb , Applied rule: bcb-->cbc ).
+The reduced word #5 in this level: dcbacbcdcb ( Parent node: dbcbabcdcb , Applied rule: bcba-->cbac ).
+The reduced word #6 in this level: dcabcdabcb ( Parent node: dacbcdabcb , Applied rule: ac-->ca ).
+The reduced word #7 in this level: dbcbdabcdb ( Parent node: bdcbdabcdb , Applied rule: bd-->db ).
+The reduced word #8 in this level: dbcdbabcdb ( Parent node: bdcdbabcdb , Applied rule: bd-->db ).
+The reduced word #9 in this level: dbcbadbcdb ( Parent node: bdcbadbcdb , Applied rule: bd-->db ).
+The reduced word #10 in this level: dcbcabdcdb ( Parent node: dbcbabdcdb , Applied rule: bcb-->cbc ).
+The reduced word #11 in this level: dcbacbdcdb ( Parent node: dbcbabdcdb , Applied rule: bcba-->cbac ).
+The reduced word #12 in this level: dcadbacbdc ( Parent node: dacdbacbdc , Applied rule: ac-->ca ).
+The reduced word #13 in this level: dcabdacbdc ( Parent node: dacbdacbdc , Applied rule: ac-->ca ).
+The reduced word #14 in this level: dcabadcbdc ( Parent node: dacbadcbdc , Applied rule: ac-->ca ).
+The reduced word #15 in this level: cdcabacbdc ( Parent node: cdacbacbdc , Applied rule: ac-->ca ).
+The reduced word #16 in this level: cdcabcabdc ( Parent node: cdacbcabdc , Applied rule: ac-->ca ).
+The reduced word #17 in this level: dcadbcabdc ( Parent node: dacdbcabdc , Applied rule: ac-->ca ).
+The reduced word #18 in this level: dcabdcabdc ( Parent node: dacbdcabdc , Applied rule: ac-->ca ).
+The reduced word #19 in this level: dcabcdacbc ( Parent node: dacbcdacbc , Applied rule: ac-->ca ).
+The reduced word #20 in this level: dcabcadcbc ( Parent node: dacbcadcbc , Applied rule: ac-->ca ).
+The reduced word #21 in this level: dcabacdcbc ( Parent node: dacbacdcbc , Applied rule: ac-->ca ).
+The reduced word #22 in this level: dcabcdcabc ( Parent node: dacbcdcabc , Applied rule: ac-->ca ).
+The reduced word #23 in this level: dcadbacdbc ( Parent node: dacdbacdbc , Applied rule: ac-->ca ).
+The reduced word #24 in this level: dcabdacdbc ( Parent node: dacbdacdbc , Applied rule: ac-->ca ).
+The reduced word #25 in this level: dcabadcdbc ( Parent node: dacbadcdbc , Applied rule: ac-->ca ).
+The reduced word #26 in this level: cdcabacdbc ( Parent node: cdacbacdbc , Applied rule: ac-->ca ).
+The reduced word #27 in this level: cdcabcadbc ( Parent node: cdacbcadbc , Applied rule: ac-->ca ).
+The reduced word #28 in this level: dcadbcadbc ( Parent node: dacdbcadbc , Applied rule: ac-->ca ).
+The reduced word #29 in this level: dcabdcadbc ( Parent node: dacbdcadbc , Applied rule: ac-->ca ).
+The reduced word #30 in this level: cdcabcdabc ( Parent node: cdacbcdabc , Applied rule: ac-->ca ).
+The reduced word #31 in this level: dcadbcdabc ( Parent node: dacdbcdabc , Applied rule: ac-->ca ).
+The reduced word #32 in this level: dcabdcdabc ( Parent node: dacbdcdabc , Applied rule: ac-->ca ).
+The reduced word #33 in this level: dbcbdabcbd ( Parent node: bdcbdabcbd , Applied rule: bd-->db ).
+The reduced word #34 in this level: dbcdbabcbd ( Parent node: bdcdbabcbd , Applied rule: bd-->db ).
+The reduced word #35 in this level: dbcbadbcbd ( Parent node: bdcbadbcbd , Applied rule: bd-->db ).
+The reduced word #36 in this level: dcbcabdcbd ( Parent node: dbcbabdcbd , Applied rule: bcb-->cbc ).
+The reduced word #37 in this level: dcbacbdcbd ( Parent node: dbcbabdcbd , Applied rule: bcba-->cbac ).
+The reduced word #38 in this level: dbcbdcabcd ( Parent node: bdcbdcabcd , Applied rule: bd-->db ).
+The reduced word #39 in this level: dbcdbcabcd ( Parent node: bdcdbcabcd , Applied rule: bd-->db ).
+The reduced word #40 in this level: dbcbadcbcd ( Parent node: bdcbadcbcd , Applied rule: bd-->db ).
+The reduced word #41 in this level: dbcbdacbcd ( Parent node: bdcbdacbcd , Applied rule: bd-->db ).
+The reduced word #42 in this level: dbcdbacbcd ( Parent node: bdcdbacbcd , Applied rule: bd-->db ).
+The reduced word #43 in this level: cdcbcdabcd ( Parent node: cdbcbdabcd , Applied rule: bcb-->cbc ).
+The reduced word #44 in this level: cdcbcadbcd ( Parent node: cdbcbadbcd , Applied rule: bcb-->cbc ).
+The reduced word #45 in this level: cdcbacdbcd ( Parent node: cdbcbadbcd , Applied rule: bcba-->cbac ).
+The reduced word #46 in this level: cdcbcabdcd ( Parent node: cdbcbabdcd , Applied rule: bcb-->cbc ).
+The reduced word #47 in this level: cdbcbabcdc ( Parent node: cdbcbabdcd , Applied rule: dcd-->cdc ).
+The reduced word #48 in this level: cdcbacbdcd ( Parent node: cdbcbabdcd , Applied rule: bcba-->cbac ).
+
+Level: 15
+The reduced word #1 in this level: cdcbacbcdc ( Parent node: cdcbacbdcd , Applied rule: dcd-->cdc ).
+The reduced word #2 in this level: dcdbacbdcd ( Parent node: cdcbacbdcd , Applied rule: cdc-->dcd ).
+The reduced word #3 in this level: dcbdacbdcd ( Parent node: cdcbacbdcd , Applied rule: cdcb-->dcbd ).
+The reduced word #4 in this level: dcbadcbdcd ( Parent node: cdcbacbdcd , Applied rule: cdcba-->dcbad ).
+The reduced word #5 in this level: cdcbcabcdc ( Parent node: cdbcbabcdc , Applied rule: bcb-->cbc ).
+The reduced word #6 in this level: dcdbcabdcd ( Parent node: cdcbcabdcd , Applied rule: cdc-->dcd ).
+The reduced word #7 in this level: dcbdcabdcd ( Parent node: cdcbcabdcd , Applied rule: cdcb-->dcbd ).
+The reduced word #8 in this level: dcdbacdbcd ( Parent node: cdcbacdbcd , Applied rule: cdc-->dcd ).
+The reduced word #9 in this level: dcbdacdbcd ( Parent node: cdcbacdbcd , Applied rule: cdcb-->dcbd ).
+The reduced word #10 in this level: dcbadcdbcd ( Parent node: cdcbacdbcd , Applied rule: cdcba-->dcbad ).
+The reduced word #11 in this level: dcdbcadbcd ( Parent node: cdcbcadbcd , Applied rule: cdc-->dcd ).
+The reduced word #12 in this level: dcbdcadbcd ( Parent node: cdcbcadbcd , Applied rule: cdcb-->dcbd ).
+The reduced word #13 in this level: dcdbcdabcd ( Parent node: cdcbcdabcd , Applied rule: cdc-->dcd ).
+The reduced word #14 in this level: dcbdcdabcd ( Parent node: cdcbcdabcd , Applied rule: cdcb-->dcbd ).
+The reduced word #15 in this level: dcbcdacbcd ( Parent node: dbcbdacbcd , Applied rule: bcb-->cbc ).
+The reduced word #16 in this level: dcbcadcbcd ( Parent node: dbcbadcbcd , Applied rule: bcb-->cbc ).
+The reduced word #17 in this level: dcbacdcbcd ( Parent node: dbcbadcbcd , Applied rule: bcba-->cbac ).
+The reduced word #18 in this level: dcbcdcabcd ( Parent node: dbcbdcabcd , Applied rule: bcb-->cbc ).
+The reduced word #19 in this level: dcbacdbcbd ( Parent node: dcbacbdcbd , Applied rule: bd-->db ).
+The reduced word #20 in this level: dcbcadbcbd ( Parent node: dcbcabdcbd , Applied rule: bd-->db ).
+The reduced word #21 in this level: dcbcdabcbd ( Parent node: dbcbdabcbd , Applied rule: bcb-->cbc ).
+The reduced word #22 in this level: dcdabcdabc ( Parent node: dcadbcdabc , Applied rule: ad-->da ).
+The reduced word #23 in this level: dcdabcadbc ( Parent node: dcadbcadbc , Applied rule: ad-->da ).
+The reduced word #24 in this level: cdcbabcdbc ( Parent node: cdcabacdbc , Applied rule: aba-->bab ).
+The reduced word #25 in this level: dcdabacdbc ( Parent node: cdcabacdbc , Applied rule: cdc-->dcd ).
+The reduced word #26 in this level: dcbabdcdbc ( Parent node: dcabadcdbc , Applied rule: aba-->bab ).
+The reduced word #27 in this level: dcbabcdcbc ( Parent node: dcabacdcbc , Applied rule: aba-->bab ).
+The reduced word #28 in this level: dcdabcabdc ( Parent node: dcadbcabdc , Applied rule: ad-->da ).
+The reduced word #29 in this level: cdcbabcbdc ( Parent node: cdcabacbdc , Applied rule: aba-->bab ).
+The reduced word #30 in this level: dcdabacbdc ( Parent node: cdcabacbdc , Applied rule: cdc-->dcd ).
+The reduced word #31 in this level: dcbabdcbdc ( Parent node: dcabadcbdc , Applied rule: aba-->bab ).
+The reduced word #32 in this level: dcbacdbcdb ( Parent node: dcbacbdcdb , Applied rule: bd-->db ).
+The reduced word #33 in this level: dcbcadbcdb ( Parent node: dcbcabdcdb , Applied rule: bd-->db ).
+The reduced word #34 in this level: dcbcdabcdb ( Parent node: dbcbdabcdb , Applied rule: bcb-->cbc ).
+The reduced word #35 in this level: dcbabcdbcb ( Parent node: dcabacdbcb , Applied rule: aba-->bab ).
+
+Level: 16
+The reduced word #1 in this level: dcbadbcbdc ( Parent node: dcbabdcbdc , Applied rule: bd-->db ).
+The reduced word #2 in this level: dcdbabcbdc ( Parent node: dcdabacbdc , Applied rule: aba-->bab ).
+The reduced word #3 in this level: dcbdabcbdc ( Parent node: cdcbabcbdc , Applied rule: cdcb-->dcbd ).
+The reduced word #4 in this level: dcbadbcdbc ( Parent node: dcbabdcdbc , Applied rule: bd-->db ).
+The reduced word #5 in this level: dcdbabcdbc ( Parent node: dcdabacdbc , Applied rule: aba-->bab ).
+The reduced word #6 in this level: dcbdabcdbc ( Parent node: cdcbabcdbc , Applied rule: cdcb-->dcbd ).
+The reduced word #7 in this level: dcbdcabcdc ( Parent node: dcbdcabdcd , Applied rule: dcd-->cdc ).
+The reduced word #8 in this level: dcdbcabcdc ( Parent node: dcdbcabdcd , Applied rule: dcd-->cdc ).
+The reduced word #9 in this level: dcbadcbcdc ( Parent node: dcbadcbdcd , Applied rule: dcd-->cdc ).
+The reduced word #10 in this level: dcbdacbcdc ( Parent node: dcbdacbdcd , Applied rule: dcd-->cdc ).
+The reduced word #11 in this level: dcdbacbcdc ( Parent node: dcdbacbdcd , Applied rule: dcd-->cdc ).
+
+The number of shortest path(s) found from vertex 1 to vertex abcdabcaba is 768.
+
+1: The shortest path #1 (Shortlex Normal Form): abacbadcba
+2: The shortest path #2 : babcbadcba
+3: The shortest path #3 : abcabadcba
+4: The shortest path #4 : abacbdacba
+5: The shortest path #5 : babcbdacba
+6: The shortest path #6 : abcabdacba
+7: The shortest path #7 : abacbdcaba
+8: The shortest path #8 : abacdbacba
+9: The shortest path #9 : abcbabdcba
+10: The shortest path #10 : bacbcadcba
+11: The shortest path #11 : bacbacdcba
+12: The shortest path #12 : bacbadcdba
+13: The shortest path #13 : bcabacdcba
+14: The shortest path #14 : bacbadcbda
+15: The shortest path #15 : bacbadcbad
+16: The shortest path #16 : bcabcadcba
+17: The shortest path #17 : bacbcdacba
+18: The shortest path #18 : acbcabdcba
+19: The shortest path #19 : abcbadbcba
+20: The shortest path #20 : acbacbdcba
+21: The shortest path #21 : babcdbacba
+22: The shortest path #22 : abcadbacba
+23: The shortest path #23 : abacdbcaba
+24: The shortest path #24 : babcbdcaba
+25: The shortest path #25 : abacbdcbab
+26: The shortest path #26 : abcabdcaba
+27: The shortest path #27 : abcabdcbab
+28: The shortest path #28 : abcadbcaba
+29: The shortest path #29 : babcbdcbab
+30: The shortest path #30 : abacdbcbab
+31: The shortest path #31 : bacbcdcaba
+32: The shortest path #32 : babcdbcaba
+33: The shortest path #33 : abcdabacba
+34: The shortest path #34 : cabacbdcba
+35: The shortest path #35 : acbacdbcba
+36: The shortest path #36 : acbcadbcba
+37: The shortest path #37 : abcbadcbca
+38: The shortest path #38 : abcbdabcba
+39: The shortest path #39 : abcbadcbac
+40: The shortest path #40 : cabcabdcba
+41: The shortest path #41 : bcabcdacba
+42: The shortest path #42 : bcabadcbad
+43: The shortest path #43 : bacbdacbad
+44: The shortest path #44 : bcabadcbda
+45: The shortest path #45 : bacbdacbda
+46: The shortest path #46 : bcbabcdcba
+47: The shortest path #47 : bcabadcdba
+48: The shortest path #48 : bacbdacdba
+49: The shortest path #49 : bcabdacdba
+50: The shortest path #50 : bacbdcadba
+51: The shortest path #51 : bacdbacdba
+52: The shortest path #52 : bcbabdcdba
+53: The shortest path #53 : cbcabcdcba
+54: The shortest path #54 : cbacbcdcba
+55: The shortest path #55 : bcbabdcbda
+56: The shortest path #56 : bcbabdcbad
+57: The shortest path #57 : bcabdacbda
+58: The shortest path #58 : bacbdcabda
+59: The shortest path #59 : bacdbacbda
+60: The shortest path #60 : bcabdacbad
+61: The shortest path #61 : bacbdcabad
+62: The shortest path #62 : bacdbacbad
+63: The shortest path #63 : bcabcdcaba
+64: The shortest path #64 : cabcadbcba
+65: The shortest path #65 : acbcadcbac
+66: The shortest path #66 : abcbdacbac
+67: The shortest path #67 : acbacdcbac
+68: The shortest path #68 : acbcdabcba
+69: The shortest path #69 : abcbdacbca
+70: The shortest path #70 : abcdbabcba
+71: The shortest path #71 : acbcadcbca
+72: The shortest path #72 : acbacdcbca
+73: The shortest path #73 : cabacdbcba
+74: The shortest path #74 : cbabcbdcba
+75: The shortest path #75 : abcdabcaba
+76: The shortest path #76 : babcdbcbab
+77: The shortest path #77 : bacbcdcbab
+78: The shortest path #78 : bacbdcdaba
+79: The shortest path #79 : abacdcbcab
+80: The shortest path #80 : abcadbcbab
+81: The shortest path #81 : abacdcbacb
+82: The shortest path #82 : babcdcbacb
+83: The shortest path #83 : abadcdbacb
+84: The shortest path #84 : abcadcbacb
+85: The shortest path #85 : abadcbdacb
+86: The shortest path #86 : abadcbadcb
+87: The shortest path #87 : abcadcbcab
+88: The shortest path #88 : abcdabcbab
+89: The shortest path #89 : babcdcbcab
+90: The shortest path #90 : abadcdbcab
+91: The shortest path #91 : abadcbdcab
+92: The shortest path #92 : bacbdcdbab
+93: The shortest path #93 : bcabdcdaba
+94: The shortest path #94 : bacdbcdaba
+95: The shortest path #95 : bcabcdcbab
+96: The shortest path #96 : bacbdcbdab
+97: The shortest path #97 : bacbdcbadb
+98: The shortest path #98 : cbabcdbcba
+99: The shortest path #99 : cabacdcbca
+100: The shortest path #100 : cabacdcbac
+101: The shortest path #101 : acbadcdbca
+102: The shortest path #102 : acbadcbdca
+103: The shortest path #103 : cabcadcbca
+104: The shortest path #104 : acbcdacbca
+105: The shortest path #105 : abcdbacbca
+106: The shortest path #106 : abcdbacbac
+107: The shortest path #107 : abcbdcabca
+108: The shortest path #108 : cabcdabcba
+109: The shortest path #109 : acbcdacbac
+110: The shortest path #110 : acbadcdbac
+111: The shortest path #111 : acbadcbdac
+112: The shortest path #112 : acbadcbadc
+113: The shortest path #113 : abcbdcabac
+114: The shortest path #114 : cabcadcbac
+115: The shortest path #115 : bcadbacbad
+116: The shortest path #116 : bacdbcabad
+117: The shortest path #117 : bacbdcbabd
+118: The shortest path #118 : bcabdcabad
+119: The shortest path #119 : bcadbacbda
+120: The shortest path #120 : bacdbcabda
+121: The shortest path #121 : bcabdcabda
+122: The shortest path #122 : cbcabdcbad
+123: The shortest path #123 : bcbadbcbad
+124: The shortest path #124 : cbacbdcbad
+125: The shortest path #125 : cbcabdcbda
+126: The shortest path #126 : bcbadbcbda
+127: The shortest path #127 : cbacbdcbda
+128: The shortest path #128 : cbacbdcdba
+129: The shortest path #129 : cbcabdcdba
+130: The shortest path #130 : bcbadbcdba
+131: The shortest path #131 : bcadbacdba
+132: The shortest path #132 : bacdbcadba
+133: The shortest path #133 : bcabdcadba
+134: The shortest path #134 : bcadbcadba
+135: The shortest path #135 : bcdabacdba
+136: The shortest path #136 : cbcadbcdba
+137: The shortest path #137 : bcbdabcdba
+138: The shortest path #138 : cbacdbcdba
+139: The shortest path #139 : cbacdbcbda
+140: The shortest path #140 : cbcadbcbda
+141: The shortest path #141 : bcbadcbcda
+142: The shortest path #142 : bcbdabcbda
+143: The shortest path #143 : cbacdbcbad
+144: The shortest path #144 : cbcadbcbad
+145: The shortest path #145 : bcbadcbcad
+146: The shortest path #146 : bcbdabcbad
+147: The shortest path #147 : bcbadcbacd
+148: The shortest path #148 : bcadbcabda
+149: The shortest path #149 : bcdabacbda
+150: The shortest path #150 : bcabdcbabd
+151: The shortest path #151 : bcadbcabad
+152: The shortest path #152 : bacdbcbabd
+153: The shortest path #153 : bcdabacbad
+154: The shortest path #154 : cabcdacbac
+155: The shortest path #155 : abcbdcbabc
+156: The shortest path #156 : acbcdcabac
+157: The shortest path #157 : abcdbcabac
+158: The shortest path #158 : cabadcbadc
+159: The shortest path #159 : acbdacbadc
+160: The shortest path #160 : cabadcbdac
+161: The shortest path #161 : acbdacbdac
+162: The shortest path #162 : cabadcdbac
+163: The shortest path #163 : acbdacdbac
+164: The shortest path #164 : cabcdacbca
+165: The shortest path #165 : acbcdcabca
+166: The shortest path #166 : abcdbcabca
+167: The shortest path #167 : cabadcbdca
+168: The shortest path #168 : acbdacbdca
+169: The shortest path #169 : cabadcdbca
+170: The shortest path #170 : acbdacdbca
+171: The shortest path #171 : cbabcdcbac
+172: The shortest path #172 : cbabcdcbca
+173: The shortest path #173 : bcabdcbadb
+174: The shortest path #174 : bacdbcbadb
+175: The shortest path #175 : bcabdcbdab
+176: The shortest path #176 : bacdbcbdab
+177: The shortest path #177 : bcabdcdbab
+178: The shortest path #178 : bacdbcdbab
+179: The shortest path #179 : bcadbcdaba
+180: The shortest path #180 : babdcbdcab
+181: The shortest path #181 : abdacbdcab
+182: The shortest path #182 : babdcdbcab
+183: The shortest path #183 : abdacdbcab
+184: The shortest path #184 : abcdacbcab
+185: The shortest path #185 : abcdacbacb
+186: The shortest path #186 : babdcbadcb
+187: The shortest path #187 : abdacbadcb
+188: The shortest path #188 : babdcbdacb
+189: The shortest path #189 : abdacbdacb
+190: The shortest path #190 : babdcdbacb
+191: The shortest path #191 : abdacdbacb
+192: The shortest path #192 : abdcadbacb
+193: The shortest path #193 : adbacdbacb
+194: The shortest path #194 : badbcdbacb
+195: The shortest path #195 : abdcabdacb
+196: The shortest path #196 : adbacbdacb
+197: The shortest path #197 : badbcbdacb
+198: The shortest path #198 : abdcabadcb
+199: The shortest path #199 : adbacbadcb
+200: The shortest path #200 : badbcbadcb
+201: The shortest path #201 : abcdcabacb
+202: The shortest path #202 : abcdcabcab
+203: The shortest path #203 : abdcadbcab
+204: The shortest path #204 : adbacdbcab
+205: The shortest path #205 : badbcdbcab
+206: The shortest path #206 : abdcabdcab
+207: The shortest path #207 : adbacbdcab
+208: The shortest path #208 : badbcbdcab
+209: The shortest path #209 : bcadbcdbab
+210: The shortest path #210 : bcdabcdaba
+211: The shortest path #211 : bacdcbcdab
+212: The shortest path #212 : bcadbcbdab
+213: The shortest path #213 : bacdcbcadb
+214: The shortest path #214 : bcadbcbadb
+215: The shortest path #215 : bacdcbacdb
+216: The shortest path #216 : cbabdcdbca
+217: The shortest path #217 : cbabdcbdca
+218: The shortest path #218 : cbabdcdbac
+219: The shortest path #219 : cbabdcbdac
+220: The shortest path #220 : cbabdcbadc
+221: The shortest path #221 : cabdacdbca
+222: The shortest path #222 : acbdcadbca
+223: The shortest path #223 : acdbacdbca
+224: The shortest path #224 : cabdacbdca
+225: The shortest path #225 : acbdcabdca
+226: The shortest path #226 : acdbacbdca
+227: The shortest path #227 : acbdcdabca
+228: The shortest path #228 : cabcdcabca
+229: The shortest path #229 : cabdacdbac
+230: The shortest path #230 : acbdcadbac
+231: The shortest path #231 : acdbacdbac
+232: The shortest path #232 : cabdacbdac
+233: The shortest path #233 : acbdcabdac
+234: The shortest path #234 : acdbacbdac
+235: The shortest path #235 : cabdacbadc
+236: The shortest path #236 : acbdcabadc
+237: The shortest path #237 : acdbacbadc
+238: The shortest path #238 : abcdbcbabc
+239: The shortest path #239 : acbcdcbabc
+240: The shortest path #240 : acbdcdabac
+241: The shortest path #241 : cabcdcabac
+242: The shortest path #242 : bcdbabcbad
+243: The shortest path #243 : bcdabcabad
+244: The shortest path #244 : bacdcbcabd
+245: The shortest path #245 : bcadbcbabd
+246: The shortest path #246 : bacdcbacbd
+247: The shortest path #247 : bcdbabcbda
+248: The shortest path #248 : bcdabcabda
+249: The shortest path #249 : cbcadcbacd
+250: The shortest path #250 : bcbdacbacd
+251: The shortest path #251 : cbacdcbacd
+252: The shortest path #252 : cbcdabcbad
+253: The shortest path #253 : bcbdacbcad
+254: The shortest path #254 : cbcadcbcad
+255: The shortest path #255 : cbacdcbcad
+256: The shortest path #256 : cbcdabcbda
+257: The shortest path #257 : bcbdacbcda
+258: The shortest path #258 : cbcadcbcda
+259: The shortest path #259 : cbacdcbcda
+260: The shortest path #260 : cbcdabcdba
+261: The shortest path #261 : bcdbabcdba
+262: The shortest path #262 : bcdabcadba
+263: The shortest path #263 : cbadcdbcda
+264: The shortest path #264 : cbadcbdcda
+265: The shortest path #265 : cbcdacbcda
+266: The shortest path #266 : bcbdcabcda
+267: The shortest path #267 : bcdbacbcda
+268: The shortest path #268 : cbadcdbcad
+269: The shortest path #269 : cbadcbdcad
+270: The shortest path #270 : cbcdacbcad
+271: The shortest path #271 : bcbdcabcad
+272: The shortest path #272 : bcdbacbcad
+273: The shortest path #273 : cbcdacbacd
+274: The shortest path #274 : cbadcdbacd
+275: The shortest path #275 : cbadcbdacd
+276: The shortest path #276 : cbadcbadcd
+277: The shortest path #277 : bcbdcabacd
+278: The shortest path #278 : bcdbacbacd
+279: The shortest path #279 : badcdbacbd
+280: The shortest path #280 : bcadcbacbd
+281: The shortest path #281 : badcbdacbd
+282: The shortest path #282 : badcbadcbd
+283: The shortest path #283 : bcadcbcabd
+284: The shortest path #284 : bcdabcbabd
+285: The shortest path #285 : badcdbcabd
+286: The shortest path #286 : badcbdcabd
+287: The shortest path #287 : cabcdcbabc
+288: The shortest path #288 : cabdcdabac
+289: The shortest path #289 : acbdcdbabc
+290: The shortest path #290 : acdbcdabac
+291: The shortest path #291 : acbdcbdabc
+292: The shortest path #292 : acbdcbadbc
+293: The shortest path #293 : abcdcbcabc
+294: The shortest path #294 : abcdcbacbc
+295: The shortest path #295 : cadbacbadc
+296: The shortest path #296 : acdbcabadc
+297: The shortest path #297 : acbdcbabdc
+298: The shortest path #298 : cabdcabadc
+299: The shortest path #299 : cadbacbdac
+300: The shortest path #300 : acdbcabdac
+301: The shortest path #301 : cabdcabdac
+302: The shortest path #302 : cadbacdbac
+303: The shortest path #303 : acdbcadbac
+304: The shortest path #304 : cabdcadbac
+305: The shortest path #305 : cabdcdabca
+306: The shortest path #306 : acdbcdabca
+307: The shortest path #307 : cadbacbdca
+308: The shortest path #308 : acdbcabdca
+309: The shortest path #309 : cabdcabdca
+310: The shortest path #310 : cadbacdbca
+311: The shortest path #311 : acdbcadbca
+312: The shortest path #312 : cabdcadbca
+313: The shortest path #313 : cbadbcbadc
+314: The shortest path #314 : cbadbcbdac
+315: The shortest path #315 : cbadbcdbac
+316: The shortest path #316 : cbadbcbdca
+317: The shortest path #317 : cbadbcdbca
+318: The shortest path #318 : badcdbacdb
+319: The shortest path #319 : bcadcbacdb
+320: The shortest path #320 : badcbdacdb
+321: The shortest path #321 : badcbadcdb
+322: The shortest path #322 : bcadcbcadb
+323: The shortest path #323 : bcdabcbadb
+324: The shortest path #324 : badcdbcadb
+325: The shortest path #325 : badcbdcadb
+326: The shortest path #326 : bcadcbcdab
+327: The shortest path #327 : bcdabcbdab
+328: The shortest path #328 : badcdbcdab
+329: The shortest path #329 : badcbdcdab
+330: The shortest path #330 : bcdabcdbab
+331: The shortest path #331 : badcbcdcab
+332: The shortest path #332 : bdabcbdcab
+333: The shortest path #333 : adbcabdcab
+334: The shortest path #334 : dabacbdcab
+335: The shortest path #335 : bdabcdbcab
+336: The shortest path #336 : adbcadbcab
+337: The shortest path #337 : dabacdbcab
+338: The shortest path #338 : abdcdabcab
+339: The shortest path #339 : abcdcbabcb
+340: The shortest path #340 : abdcdabacb
+341: The shortest path #341 : badcbcadcb
+342: The shortest path #342 : bdabcbadcb
+343: The shortest path #343 : badcbacdcb
+344: The shortest path #344 : adbcabadcb
+345: The shortest path #345 : dabacbadcb
+346: The shortest path #346 : abdcbabdcb
+347: The shortest path #347 : badcbcdacb
+348: The shortest path #348 : bdabcbdacb
+349: The shortest path #349 : adbcabdacb
+350: The shortest path #350 : dabacbdacb
+351: The shortest path #351 : bdabcdbacb
+352: The shortest path #352 : adbcadbacb
+353: The shortest path #353 : dabacdbacb
+354: The shortest path #354 : dbabcdbacb
+355: The shortest path #355 : dabcadbacb
+356: The shortest path #356 : adbcdabacb
+357: The shortest path #357 : dbabcbdacb
+358: The shortest path #358 : dabcabdacb
+359: The shortest path #359 : bdacbcdacb
+360: The shortest path #360 : adbcbabdcb
+361: The shortest path #361 : abdcbadbcb
+362: The shortest path #362 : dbabcbadcb
+363: The shortest path #363 : dabcabadcb
+364: The shortest path #364 : bdacbacdcb
+365: The shortest path #365 : bdacbcadcb
+366: The shortest path #366 : abdcdbabcb
+367: The shortest path #367 : abdcbdabcb
+368: The shortest path #368 : adbcdabcab
+369: The shortest path #369 : dbabcdbcab
+370: The shortest path #370 : dabcadbcab
+371: The shortest path #371 : dbabcbdcab
+372: The shortest path #372 : dabcabdcab
+373: The shortest path #373 : bdacbcdcab
+374: The shortest path #374 : bdacbdcdab
+375: The shortest path #375 : bdacdbcdab
+376: The shortest path #376 : bcdacbcdab
+377: The shortest path #377 : bdacbdcadb
+378: The shortest path #378 : bdacdbcadb
+379: The shortest path #379 : bcdacbcadb
+380: The shortest path #380 : bcdacbacdb
+381: The shortest path #381 : bdacbadcdb
+382: The shortest path #382 : bdacbdacdb
+383: The shortest path #383 : bdacdbacdb
+384: The shortest path #384 : cbdabcdbca
+385: The shortest path #385 : cbadcbcdca
+386: The shortest path #386 : cbdabcbdca
+387: The shortest path #387 : cbdabcdbac
+388: The shortest path #388 : cbadcbcdac
+389: The shortest path #389 : cbdabcbdac
+390: The shortest path #390 : cbadcbcadc
+391: The shortest path #391 : cbdabcbadc
+392: The shortest path #392 : cbadcbacdc
+393: The shortest path #393 : cadbcadbca
+394: The shortest path #394 : cdabacdbca
+395: The shortest path #395 : cadbcabdca
+396: The shortest path #396 : cdabacbdca
+397: The shortest path #397 : cadbcdabca
+398: The shortest path #398 : cadbcadbac
+399: The shortest path #399 : cdabacdbac
+400: The shortest path #400 : cadbcabdac
+401: The shortest path #401 : cdabacbdac
+402: The shortest path #402 : cabdcbabdc
+403: The shortest path #403 : cadbcabadc
+404: The shortest path #404 : acdbcbabdc
+405: The shortest path #405 : cdabacbadc
+406: The shortest path #406 : abdcdbacbc
+407: The shortest path #407 : abdcbdacbc
+408: The shortest path #408 : abdcbadcbc
+409: The shortest path #409 : abdcdbcabc
+410: The shortest path #410 : abdcbdcabc
+411: The shortest path #411 : cabdcbadbc
+412: The shortest path #412 : acdbcbadbc
+413: The shortest path #413 : cabdcbdabc
+414: The shortest path #414 : acdbcbdabc
+415: The shortest path #415 : acdbcdbabc
+416: The shortest path #416 : cadbcdabac
+417: The shortest path #417 : cabdcdbabc
+418: The shortest path #418 : bdacbdcabd
+419: The shortest path #419 : bdacdbcabd
+420: The shortest path #420 : bcdacbcabd
+421: The shortest path #421 : bcdacbacbd
+422: The shortest path #422 : bdacbadcbd
+423: The shortest path #423 : bdacbdacbd
+424: The shortest path #424 : bdacdbacbd
+425: The shortest path #425 : bcdbcabacd
+426: The shortest path #426 : bcbdcbabcd
+427: The shortest path #427 : cbcdcabacd
+428: The shortest path #428 : cbdacbadcd
+429: The shortest path #429 : cbdacbdacd
+430: The shortest path #430 : cbdacdbacd
+431: The shortest path #431 : bcdbcabcad
+432: The shortest path #432 : cbcdcabcad
+433: The shortest path #433 : cbdacbdcad
+434: The shortest path #434 : cbdacdbcad
+435: The shortest path #435 : bcdbcabcda
+436: The shortest path #436 : cbcdcabcda
+437: The shortest path #437 : cbdacbdcda
+438: The shortest path #438 : cbdacdbcda
+439: The shortest path #439 : cbdcadbcda
+440: The shortest path #440 : cdbacdbcda
+441: The shortest path #441 : cbdacbcdca
+442: The shortest path #442 : cbdcabdcda
+443: The shortest path #443 : cdbacbdcda
+444: The shortest path #444 : cbdcdabcda
+445: The shortest path #445 : cbdcadbcad
+446: The shortest path #446 : cdbacdbcad
+447: The shortest path #447 : cbdcabdcad
+448: The shortest path #448 : cdbacbdcad
+449: The shortest path #449 : cbdcdabcad
+450: The shortest path #450 : cbdcadbacd
+451: The shortest path #451 : cdbacdbacd
+452: The shortest path #452 : cbdcabdacd
+453: The shortest path #453 : cdbacbdacd
+454: The shortest path #454 : cbdacbacdc
+455: The shortest path #455 : cbdcabadcd
+456: The shortest path #456 : cdbacbadcd
+457: The shortest path #457 : cbcdcbabcd
+458: The shortest path #458 : cbdcdabacd
+459: The shortest path #459 : bcdbcbabcd
+460: The shortest path #460 : bdcadbacbd
+461: The shortest path #461 : dbacdbacbd
+462: The shortest path #462 : bdcabdacbd
+463: The shortest path #463 : dbacbdacbd
+464: The shortest path #464 : bdcabadcbd
+465: The shortest path #465 : dbacbadcbd
+466: The shortest path #466 : bcdcabacbd
+467: The shortest path #467 : bcdcabcabd
+468: The shortest path #468 : bdcadbcabd
+469: The shortest path #469 : dbacdbcabd
+470: The shortest path #470 : bdcabdcabd
+471: The shortest path #471 : dbacbdcabd
+472: The shortest path #472 : cadbcdbabc
+473: The shortest path #473 : cdabcdabac
+474: The shortest path #474 : acdcbcdabc
+475: The shortest path #475 : cadbcbdabc
+476: The shortest path #476 : acdcbcadbc
+477: The shortest path #477 : cadbcbadbc
+478: The shortest path #478 : acdcbacdbc
+479: The shortest path #479 : adbcbdcabc
+480: The shortest path #480 : adbcdbcabc
+481: The shortest path #481 : adbcbadcbc
+482: The shortest path #482 : adbcbdacbc
+483: The shortest path #483 : adbcdbacbc
+484: The shortest path #484 : cdbabcbadc
+485: The shortest path #485 : cdabcabadc
+486: The shortest path #486 : acdcbcabdc
+487: The shortest path #487 : cadbcbabdc
+488: The shortest path #488 : acdcbacbdc
+489: The shortest path #489 : cdbabcbdac
+490: The shortest path #490 : cdabcabdac
+491: The shortest path #491 : cdbabcdbac
+492: The shortest path #492 : cdabcadbac
+493: The shortest path #493 : cdabcdabca
+494: The shortest path #494 : cdbabcbdca
+495: The shortest path #495 : cdabcabdca
+496: The shortest path #496 : cdbabcdbca
+497: The shortest path #497 : cdabcadbca
+498: The shortest path #498 : cbdacbcadc
+499: The shortest path #499 : cbdacbcdac
+500: The shortest path #500 : bdcadbacdb
+501: The shortest path #501 : dbacdbacdb
+502: The shortest path #502 : bdcabdacdb
+503: The shortest path #503 : dbacbdacdb
+504: The shortest path #504 : bdcabadcdb
+505: The shortest path #505 : dbacbadcdb
+506: The shortest path #506 : bcdcabacdb
+507: The shortest path #507 : bcdcabcadb
+508: The shortest path #508 : bdcadbcadb
+509: The shortest path #509 : dbacdbcadb
+510: The shortest path #510 : bdcabdcadb
+511: The shortest path #511 : dbacbdcadb
+512: The shortest path #512 : bcdcabcdab
+513: The shortest path #513 : bdcadbcdab
+514: The shortest path #514 : dbacdbcdab
+515: The shortest path #515 : bdcabdcdab
+516: The shortest path #516 : dbacbdcdab
+517: The shortest path #517 : bdcabcdcab
+518: The shortest path #518 : dbacbcdcab
+519: The shortest path #519 : dabcdabcab
+520: The shortest path #520 : adbcbdabcb
+521: The shortest path #521 : adbcdbabcb
+522: The shortest path #522 : bdcabcadcb
+523: The shortest path #523 : dbacbcadcb
+524: The shortest path #524 : bdcabacdcb
+525: The shortest path #525 : dbacbacdcb
+526: The shortest path #526 : dabcbabdcb
+527: The shortest path #527 : adbcbadbcb
+528: The shortest path #528 : adcbcabdcb
+529: The shortest path #529 : adcbacbdcb
+530: The shortest path #530 : bdcabcdacb
+531: The shortest path #531 : dbacbcdacb
+532: The shortest path #532 : dabcdabacb
+533: The shortest path #533 : dabcdbabcb
+534: The shortest path #534 : dbcabcdacb
+535: The shortest path #535 : dacbacbdcb
+536: The shortest path #536 : adcbacdbcb
+537: The shortest path #537 : dacbcabdcb
+538: The shortest path #538 : adcbcadbcb
+539: The shortest path #539 : dabcbadbcb
+540: The shortest path #540 : dbcabacdcb
+541: The shortest path #541 : bdcbabcdcb
+542: The shortest path #542 : dbcabcadcb
+543: The shortest path #543 : adcbcdabcb
+544: The shortest path #544 : dabcbdabcb
+545: The shortest path #545 : dbcabcdcab
+546: The shortest path #546 : dbcabdcdab
+547: The shortest path #547 : dbcadbcdab
+548: The shortest path #548 : bdcdabcdab
+549: The shortest path #549 : dbcabdcadb
+550: The shortest path #550 : dbcadbcadb
+551: The shortest path #551 : bdcdabcadb
+552: The shortest path #552 : bcdcbabcdb
+553: The shortest path #553 : bdcdabacdb
+554: The shortest path #554 : dbcabadcdb
+555: The shortest path #555 : bdcbabdcdb
+556: The shortest path #556 : dbcabdacdb
+557: The shortest path #557 : dbcadbacdb
+558: The shortest path #558 : cbdcabcdac
+559: The shortest path #559 : cdbacbcdac
+560: The shortest path #560 : cbdcabcadc
+561: The shortest path #561 : cdbacbcadc
+562: The shortest path #562 : cdbacbcdca
+563: The shortest path #563 : adcdbacbdc
+564: The shortest path #564 : cadcbacbdc
+565: The shortest path #565 : adcbdacbdc
+566: The shortest path #566 : adcbadcbdc
+567: The shortest path #567 : cadcbcabdc
+568: The shortest path #568 : cdabcbabdc
+569: The shortest path #569 : adcdbcabdc
+570: The shortest path #570 : adcbdcabdc
+571: The shortest path #571 : cdbacbacdc
+572: The shortest path #572 : dabcdbacbc
+573: The shortest path #573 : adcbcdacbc
+574: The shortest path #574 : dabcbdacbc
+575: The shortest path #575 : adcbcadcbc
+576: The shortest path #576 : dabcbadcbc
+577: The shortest path #577 : adcbacdcbc
+578: The shortest path #578 : dabcdbcabc
+579: The shortest path #579 : adcbcdcabc
+580: The shortest path #580 : dabcbdcabc
+581: The shortest path #581 : adcdbacdbc
+582: The shortest path #582 : cadcbacdbc
+583: The shortest path #583 : adcbdacdbc
+584: The shortest path #584 : adcbadcdbc
+585: The shortest path #585 : cadcbcadbc
+586: The shortest path #586 : cdabcbadbc
+587: The shortest path #587 : adcdbcadbc
+588: The shortest path #588 : adcbdcadbc
+589: The shortest path #589 : cadcbcdabc
+590: The shortest path #590 : cdabcbdabc
+591: The shortest path #591 : adcdbcdabc
+592: The shortest path #592 : adcbdcdabc
+593: The shortest path #593 : cdabcdbabc
+594: The shortest path #594 : dbcabdcabd
+595: The shortest path #595 : dbcadbcabd
+596: The shortest path #596 : bdcdabcabd
+597: The shortest path #597 : bcdcbabcbd
+598: The shortest path #598 : bdcdabacbd
+599: The shortest path #599 : dbcabadcbd
+600: The shortest path #600 : bdcbabdcbd
+601: The shortest path #601 : dbcabdacbd
+602: The shortest path #602 : dbcadbacbd
+603: The shortest path #603 : bcdcbcabcd
+604: The shortest path #604 : bcdcbacbcd
+605: The shortest path #605 : cbdcdbabcd
+606: The shortest path #606 : cdbcdabacd
+607: The shortest path #607 : cbdcbdabcd
+608: The shortest path #608 : cbdcbadbcd
+609: The shortest path #609 : cdbcabadcd
+610: The shortest path #610 : cbdcbabdcd
+611: The shortest path #611 : cbdcabacdc
+612: The shortest path #612 : cdbcabdacd
+613: The shortest path #613 : cdbcadbacd
+614: The shortest path #614 : cdbcdabcad
+615: The shortest path #615 : cdbcabdcad
+616: The shortest path #616 : cdbcadbcad
+617: The shortest path #617 : cdbcdabcda
+618: The shortest path #618 : cdbcabdcda
+619: The shortest path #619 : cbdcabcdca
+620: The shortest path #620 : cdbcadbcda
+621: The shortest path #621 : cdbcabcdca
+622: The shortest path #622 : cbdcbabcdc
+623: The shortest path #623 : cdbcabacdc
+624: The shortest path #624 : cdbcbabdcd
+625: The shortest path #625 : cdbcbadbcd
+626: The shortest path #626 : cdbcbdabcd
+627: The shortest path #627 : cdbcdbabcd
+628: The shortest path #628 : bdcdbacbcd
+629: The shortest path #629 : bdcbdacbcd
+630: The shortest path #630 : bdcbadcbcd
+631: The shortest path #631 : bdcdbcabcd
+632: The shortest path #632 : bdcbdcabcd
+633: The shortest path #633 : dbcdabacbd
+634: The shortest path #634 : dbcbabdcbd
+635: The shortest path #635 : bdcbadbcbd
+636: The shortest path #636 : bdcdbabcbd
+637: The shortest path #637 : bdcbdabcbd
+638: The shortest path #638 : dbcdabcabd
+639: The shortest path #639 : dacbdcdabc
+640: The shortest path #640 : dacdbcdabc
+641: The shortest path #641 : cdacbcdabc
+642: The shortest path #642 : dacbdcadbc
+643: The shortest path #643 : dacdbcadbc
+644: The shortest path #644 : cdacbcadbc
+645: The shortest path #645 : cdacbacdbc
+646: The shortest path #646 : dacbadcdbc
+647: The shortest path #647 : dacbdacdbc
+648: The shortest path #648 : dacdbacdbc
+649: The shortest path #649 : dacbcdcabc
+650: The shortest path #650 : dacbacdcbc
+651: The shortest path #651 : dacbcadcbc
+652: The shortest path #652 : dacbcdacbc
+653: The shortest path #653 : dacbdcabdc
+654: The shortest path #654 : dacdbcabdc
+655: The shortest path #655 : cdacbcabdc
+656: The shortest path #656 : cdacbacbdc
+657: The shortest path #657 : dacbadcbdc
+658: The shortest path #658 : dacbdacbdc
+659: The shortest path #659 : dacdbacbdc
+660: The shortest path #660 : cdbcabcadc
+661: The shortest path #661 : cdbcabcdac
+662: The shortest path #662 : dbcdabacdb
+663: The shortest path #663 : dbcbabdcdb
+664: The shortest path #664 : bdcbadbcdb
+665: The shortest path #665 : bdcdbabcdb
+666: The shortest path #666 : bdcbdabcdb
+667: The shortest path #667 : dbcdabcadb
+668: The shortest path #668 : dbcdabcdab
+669: The shortest path #669 : dacbcdabcb
+670: The shortest path #670 : dbcbabcdcb
+671: The shortest path #671 : dacbcadbcb
+672: The shortest path #672 : dacbacdbcb
+673: The shortest path #673 : dcabcabdcb
+674: The shortest path #674 : dcabacbdcb
+675: The shortest path #675 : dcbabcbdcb
+676: The shortest path #676 : dcabacdbcb
+677: The shortest path #677 : dcabcadbcb
+678: The shortest path #678 : dcbcabcdcb
+679: The shortest path #679 : dcbacbcdcb
+680: The shortest path #680 : dcabcdabcb
+681: The shortest path #681 : dbcbdabcdb
+682: The shortest path #682 : dbcdbabcdb
+683: The shortest path #683 : dbcbadbcdb
+684: The shortest path #684 : dcbcabdcdb
+685: The shortest path #685 : dcbacbdcdb
+686: The shortest path #686 : dcadbacbdc
+687: The shortest path #687 : dcabdacbdc
+688: The shortest path #688 : dcabadcbdc
+689: The shortest path #689 : cdcabacbdc
+690: The shortest path #690 : cdcabcabdc
+691: The shortest path #691 : dcadbcabdc
+692: The shortest path #692 : dcabdcabdc
+693: The shortest path #693 : dcabcdacbc
+694: The shortest path #694 : dcabcadcbc
+695: The shortest path #695 : dcabacdcbc
+696: The shortest path #696 : dcabcdcabc
+697: The shortest path #697 : dcadbacdbc
+698: The shortest path #698 : dcabdacdbc
+699: The shortest path #699 : dcabadcdbc
+700: The shortest path #700 : cdcabacdbc
+701: The shortest path #701 : cdcabcadbc
+702: The shortest path #702 : dcadbcadbc
+703: The shortest path #703 : dcabdcadbc
+704: The shortest path #704 : cdcabcdabc
+705: The shortest path #705 : dcadbcdabc
+706: The shortest path #706 : dcabdcdabc
+707: The shortest path #707 : dbcbdabcbd
+708: The shortest path #708 : dbcdbabcbd
+709: The shortest path #709 : dbcbadbcbd
+710: The shortest path #710 : dcbcabdcbd
+711: The shortest path #711 : dcbacbdcbd
+712: The shortest path #712 : dbcbdcabcd
+713: The shortest path #713 : dbcdbcabcd
+714: The shortest path #714 : dbcbadcbcd
+715: The shortest path #715 : dbcbdacbcd
+716: The shortest path #716 : dbcdbacbcd
+717: The shortest path #717 : cdcbcdabcd
+718: The shortest path #718 : cdcbcadbcd
+719: The shortest path #719 : cdcbacdbcd
+720: The shortest path #720 : cdcbcabdcd
+721: The shortest path #721 : cdbcbabcdc
+722: The shortest path #722 : cdcbacbdcd
+723: The shortest path #723 : cdcbacbcdc
+724: The shortest path #724 : dcdbacbdcd
+725: The shortest path #725 : dcbdacbdcd
+726: The shortest path #726 : dcbadcbdcd
+727: The shortest path #727 : cdcbcabcdc
+728: The shortest path #728 : dcdbcabdcd
+729: The shortest path #729 : dcbdcabdcd
+730: The shortest path #730 : dcdbacdbcd
+731: The shortest path #731 : dcbdacdbcd
+732: The shortest path #732 : dcbadcdbcd
+733: The shortest path #733 : dcdbcadbcd
+734: The shortest path #734 : dcbdcadbcd
+735: The shortest path #735 : dcdbcdabcd
+736: The shortest path #736 : dcbdcdabcd
+737: The shortest path #737 : dcbcdacbcd
+738: The shortest path #738 : dcbcadcbcd
+739: The shortest path #739 : dcbacdcbcd
+740: The shortest path #740 : dcbcdcabcd
+741: The shortest path #741 : dcbacdbcbd
+742: The shortest path #742 : dcbcadbcbd
+743: The shortest path #743 : dcbcdabcbd
+744: The shortest path #744 : dcdabcdabc
+745: The shortest path #745 : dcdabcadbc
+746: The shortest path #746 : cdcbabcdbc
+747: The shortest path #747 : dcdabacdbc
+748: The shortest path #748 : dcbabdcdbc
+749: The shortest path #749 : dcbabcdcbc
+750: The shortest path #750 : dcdabcabdc
+751: The shortest path #751 : cdcbabcbdc
+752: The shortest path #752 : dcdabacbdc
+753: The shortest path #753 : dcbabdcbdc
+754: The shortest path #754 : dcbacdbcdb
+755: The shortest path #755 : dcbcadbcdb
+756: The shortest path #756 : dcbcdabcdb
+757: The shortest path #757 : dcbabcdbcb
+758: The shortest path #758 : dcbadbcbdc
+759: The shortest path #759 : dcdbabcbdc
+760: The shortest path #760 : dcbdabcbdc
+761: The shortest path #761 : dcbadbcdbc
+762: The shortest path #762 : dcdbabcdbc
+763: The shortest path #763 : dcbdabcdbc
+764: The shortest path #764 : dcbdcabcdc
+765: The shortest path #765 : dcdbcabcdc
+766: The shortest path #766 : dcbadcbcdc
+767: The shortest path #767 : dcbdacbcdc
+768: The shortest path #768 : dcdbacbcdc

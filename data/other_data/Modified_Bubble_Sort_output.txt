@@ -1,0 +1,145 @@
+
+Number of Generators in G: 4
+Number of Relations for G: 11
+Number K: 0
+Generator List: a, b, c, d (a < b < c < d)
+Identity Element in G: 1
+
+Relation List R: 
+aa , 1
+bb , 1
+cc , 1
+dd , 1
+aba , bab
+bcb , cbc
+cdc , dcd
+dad , ada
+ac , ca
+bd , db
+dabcba , 1
+
+Inverse List For Generators: 
+a : a
+b : b
+c : c
+d : d
+
+Source Vertex in Cay(G, S): 1
+Target Vertex in Cay(G, S): bcab
+
+The final reduced, complete rewriting system for G with respect to R: 
+1 : aa-->1
+2 : bb-->1
+3 : cc-->1
+4 : dd-->1
+5 : bab-->aba
+6 : cbc-->bcb
+7 : dcd-->cdc
+8 : dad-->ada
+9 : ca-->ac
+10 : db-->bd
+11 : dab-->abc
+12 : bcb-->ada
+13 : bada-->cb
+14 : cba-->bad
+15 : dac-->acb
+16 : bdc-->abd
+17 : bad-->adc
+18 : cdc-->aba
+19 : bac-->acd
+20 : cbd-->bda
+21 : bcd-->abc
+22 : cda-->abc
+23 : dcb-->adc
+
+5 Length Decreasing Rules : 
+1 : aa-->1
+2 : bb-->1
+3 : cc-->1
+4 : dd-->1
+5 : bada-->cb
+
+36 Length Preserving Rules ( After Thue Resolution ) : 
+6 : bab-->aba
+7 : aba-->bab
+8 : cbc-->bcb
+9 : bcb-->cbc
+10 : dcd-->cdc
+11 : cdc-->dcd
+12 : dad-->ada
+13 : ada-->dad
+14 : ca-->ac
+15 : ac-->ca
+16 : db-->bd
+17 : bd-->db
+18 : dab-->abc
+19 : abc-->dab
+20 : bcb-->ada
+21 : ada-->bcb
+22 : cba-->bad
+23 : bad-->cba
+24 : dac-->acb
+25 : acb-->dac
+26 : bdc-->abd
+27 : abd-->bdc
+28 : bad-->adc
+29 : adc-->bad
+30 : cdc-->aba
+31 : aba-->cdc
+32 : bac-->acd
+33 : acd-->bac
+34 : cbd-->bda
+35 : bda-->cbd
+36 : bcd-->abc
+37 : abc-->bcd
+38 : cda-->abc
+39 : abc-->cda
+40 : dcb-->adc
+41 : adc-->dcb
+
+The lexicographically minimal shortest path from vertex 1 to vertex bcab in Cay(G, S) is abda.
+
+Level: 0
+The reduced Word in this level: abda.
+
+Level: 1
+The reduced word #1 in this level: adba ( Parent node: abda , Applied rule: bd-->db ).
+The reduced word #2 in this level: bdca ( Parent node: abda , Applied rule: abd-->bdc ).
+The reduced word #3 in this level: acbd ( Parent node: abda , Applied rule: bda-->cbd ).
+
+Level: 2
+The reduced word #1 in this level: cabd ( Parent node: acbd , Applied rule: ac-->ca ).
+The reduced word #2 in this level: acdb ( Parent node: acbd , Applied rule: bd-->db ).
+The reduced word #3 in this level: dacd ( Parent node: acbd , Applied rule: acb-->dac ).
+The reduced word #4 in this level: bdac ( Parent node: bdca , Applied rule: ca-->ac ).
+The reduced word #5 in this level: dbca ( Parent node: bdca , Applied rule: bd-->db ).
+
+Level: 3
+The reduced word #1 in this level: dbac ( Parent node: dbca , Applied rule: ca-->ac ).
+The reduced word #2 in this level: bacb ( Parent node: bdac , Applied rule: dac-->acb ).
+The reduced word #3 in this level: cbdc ( Parent node: bdac , Applied rule: bda-->cbd ).
+The reduced word #4 in this level: dcad ( Parent node: dacd , Applied rule: ac-->ca ).
+The reduced word #5 in this level: cadb ( Parent node: acdb , Applied rule: ac-->ca ).
+
+Level: 4
+The reduced word #1 in this level: cdbc ( Parent node: cbdc , Applied rule: bd-->db ).
+The reduced word #2 in this level: bcab ( Parent node: bacb , Applied rule: ac-->ca ).
+
+The number of shortest path(s) found from vertex 1 to vertex bcab is 16.
+
+1: The shortest path #1 (Shortlex Normal Form): abda
+2: The shortest path #2 : adba
+3: The shortest path #3 : bdca
+4: The shortest path #4 : acbd
+5: The shortest path #5 : cabd
+6: The shortest path #6 : acdb
+7: The shortest path #7 : dacd
+8: The shortest path #8 : bdac
+9: The shortest path #9 : dbca
+10: The shortest path #10 : dbac
+11: The shortest path #11 : bacb
+12: The shortest path #12 : cbdc
+13: The shortest path #13 : dcad
+14: The shortest path #14 : cadb
+15: The shortest path #15 : cdbc
+16: The shortest path #16 : bcab
