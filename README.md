@@ -3,7 +3,7 @@
 Geodesics is a C++ implementation for enumerating shortest paths between two vertices 
 in the Cayley graph Cay(G,S) of a finite group G with its generating set S.
 
-Copyright (C) 2023 Dohan Kim
+Copyright (C) Dohan Kim
 
 Author : Dohan Kim
 
